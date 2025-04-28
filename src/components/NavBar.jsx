@@ -25,7 +25,7 @@ export const NavBar = () => {
   ];
 
   return (
-    <nav className=" hidden sticky top-0  md:flex justify-between px-10 items-center  h-20 z-50 bg-white shadow-md  active:text-green-500">
+    <nav className=" hidden sticky top-0  md:flex justify-between px-20 items-center  h-20 z-50 bg-white shadow-md  active:text-green-500">
       <div className="first-half md:flex gap-6">
         {navItems.map((item, index) => (
           <Link
