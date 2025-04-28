@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* @tailwind base;
+@tailwind utilities;
+@tailwind utilities; */
+
+@layer base {
+  h1 {
+    @apply text-white text-5xl font-extrabold uppercase;
+  }
+}
+
+@layer components {
+  .main-header {
+    @apply bg-[#061539] text-white py-2 px-4;
+  }
+}
+
+@theme {
+  /* light colored texts */
+  --color-primary: #63666b;
+  --text-tiny: 14px;
+  --text-tiny--line-height: 24px;
+  /* --text-tiny--letter-spacing: 0.125rem; */
+  --text-tiny--font-weight: 200;
+  /* --text-tiny--font-family: "Inter", sans-serif; */
+
+  /* bold texts */
+  --text-tiny-bold: 15px;
+  --text-tiny-bold--line-height: 24px;
+  --text-tiny-bold--font-weight: 900;
+}
