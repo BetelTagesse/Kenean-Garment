@@ -1,20 +1,12 @@
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { SlidingImage } from "@/components/home/sliding_image";
+import { SlidingImage } from "@/components/home/sliding_image.jsx";
+import { Button } from "@/shared/button";
 
 export default function Home() {
   return (
-    <>
-      <div className="text-center">
-        <SlidingImage /> page
-      </div>
-      {/* <div>
-        <FontAwesomeIcon
-          icon={faEnvelope}
-          className="text-green-500 text-3xl"
-        />
-      </div> */}
-    </>
+    <SlidingImage>
+      <h2 className="text-3xl font-bold mb-4">We Are From - 2019</h2>
+      <h2 className="text-2xl mb-6">Get Quality Fabric For Your Business</h2>
+      <Button className="bg-green-500">LEARN MORE</Button>
+    </SlidingImage>
   );
 }
