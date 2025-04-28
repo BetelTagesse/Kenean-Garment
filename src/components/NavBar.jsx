@@ -64,10 +64,6 @@ export const NavBar = () => {
         <Button className="bg-blue-950 text-white text-bold px-10 py-2 border-amber-50 rounded-full hover:cursor-pointer ">
           GET QUOTE
         </Button>
-
-        <Button className="bg-blue-950 text-white text-bold px-10 py-2 border-amber-50 rounded-full hover:cursor-pointer ">
-          GET QUOTE
-        </Button>
       </div>
     </nav>
   );
