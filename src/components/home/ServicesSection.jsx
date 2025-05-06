@@ -1,16 +1,27 @@
-"use client";
-
-import Image from "next/image";
-import logo from "../../images/cola.png";
+import { Globe, Layers, Cpu } from "lucide-react";
+import { ServicesCard } from "./ServicesCard";
 
 export const ServicesSection = () => {
   return (
-    <div>
-      Hello there
-      <i className="flaticon flaticon-rug"></i>
-      <i className="flaticon-edit"></i>
-      <i className="flaticon-global-shipping"></i>
-      <Image src={logo} alt="image" className="h-100 w-100" />
+    <div className="container w-5/6 mx-auto bg-white flex  justify-around relative z-50 transform -translate-y-40">
+      <ServicesCard
+        MyIcon={Globe}
+        title="Fabric Development"
+        description="There are many variations of passages of lorem ipsum available."
+        link="/fabric-development"
+      />
+      <ServicesCard
+        MyIcon={Layers}
+        title="Design & Patterning"
+        description="Helping you go from concept to production with precision."
+        link="/design-patterning"
+      />
+      <ServicesCard
+        MyIcon={Cpu}
+        title="Tech Integration"
+        description="Smart manufacturing with real-time tracking and automation."
+        link="/tech-integration"
+      />
     </div>
   );
 };

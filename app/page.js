@@ -1,4 +1,4 @@
-import { ServicesCard } from "@/components/home/ServicesCard";
+import { ServicesCard } from "@/components/home/ServicesCard.jsx";
 import { ServicesSection } from "@/components/home/ServicesSection.jsx";
 import { SlidingImage } from "@/components/home/sliding_image.jsx";
 import TestIconPage from "@/components/TestIcon";
@@ -19,7 +19,7 @@ export default function Home() {
         </Button>
       </SlidingImage>
       <ServicesSection />
-      <ServicesCard />
+      {/* <ServicesCard /> */}
     </>
   );
 }
