@@ -14,7 +14,15 @@
   .main-header {
     @apply bg-[#061539] text-white py-2 px-4;
   }
- 
+}
+@layer utilities {
+  .animate-rotate-once {
+    transition: transform 0.6s ease;
+  }
+
+  .group:hover .animate-rotate-once {
+    transform: rotate(-360deg);
+  }
 }
 
 @theme {
