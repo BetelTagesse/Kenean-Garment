@@ -3,7 +3,11 @@ import { ServicesCard } from "./ServicesCard";
 
 export const ServicesSection = () => {
   return (
-    <div className="container w-5/6 mx-auto bg-white flex  justify-around relative z-50 transform -translate-y-40">
+    <div
+      className="container mx-auto w-11/12 bg-white border-4 border-white 
+      flex flex-col md:flex-row md:justify-around items-center gap-10 
+      relative z-40 transform -translate-y-40 py-10"
+    >
       <ServicesCard
         MyIcon={Globe}
         title="Fabric Development"

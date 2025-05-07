@@ -14,7 +14,7 @@ export const ServicesCard = ({
       className={`w-1/2 flex flex-col items-center justify-center text-center p-6 group ${className}`}
     >
       {/* MyIcon that rotates once on hover */}
-      <MyIcon className="w-16 h-16 text-blue-600 dark:text-blue-400 mb-4 animate-rotate-once" />
+      <MyIcon className="w-16 h-16 text-green-500  mb-4 animate-rotate-once" />
 
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
 

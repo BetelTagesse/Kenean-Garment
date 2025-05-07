@@ -1,6 +1,8 @@
+import { NeedHelp } from "@/components/home/NeedHelp";
 import { ServicesCard } from "@/components/home/ServicesCard.jsx";
 import { ServicesSection } from "@/components/home/ServicesSection.jsx";
 import { SlidingImage } from "@/components/home/sliding_image.jsx";
+import { WhoWeAre } from "@/components/home/WhoWeAre";
 import TestIconPage from "@/components/TestIcon";
 import { Button } from "@/shared/button";
 
@@ -19,7 +21,8 @@ export default function Home() {
         </Button>
       </SlidingImage>
       <ServicesSection />
-      {/* <ServicesCard /> */}
+      <WhoWeAre />
+      <NeedHelp />
     </>
   );
 }
