@@ -2,11 +2,13 @@
 import { useEffect, useState } from "react";
 import cola from "../../images/cola.png";
 import burger from "../../images/bbq_burger.png";
+import designer from "../../images/designer.jpg";
 
 export const SlidingImage = ({ children }) => {
   const images = [
     { src: cola.src, alt: "image 1" },
     { src: burger.src, alt: "image 2" },
+    { src: designer.src, alt: "image 3" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

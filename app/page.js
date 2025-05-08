@@ -1,3 +1,4 @@
+import { CallUsBanner } from "@/components/home/CallUsBanner";
 import { NeedHelp } from "@/components/home/NeedHelp";
 import { ServicesCard } from "@/components/home/ServicesCard.jsx";
 import { ServicesSection } from "@/components/home/ServicesSection.jsx";
@@ -16,13 +17,14 @@ export default function Home() {
         <h2 className="text-6xl text-gray-200 mb-6">
           Get Quality Fabric For <br /> Your Business
         </h2>
-        <Button className="bg-green-500 font-bold hover:from-blue-900 hover:to-blue-950">
+        <Button className="bg-green-500 font-bold px-10 hover:from-blue-900 hover:to-blue-950">
           LEARN MORE
         </Button>
       </SlidingImage>
       <ServicesSection />
       <WhoWeAre />
       <NeedHelp />
+      <CallUsBanner />
     </>
   );
 }
