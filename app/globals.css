@@ -23,11 +23,27 @@
   .group:hover .animate-rotate-once {
     transform: rotate(-360deg);
   }
+
+  /* Create triangle cutout on the left */
+  .clip-left {
+    /* clip-path: polygon(0 0, 50% 50%, 0 100%); */
+    clip-path: polygon(0 50%, 100% 0, 0 0);
+    /* clip-path: polygon(0, 50%, 100%, 50%, 0, 100%); */
+  }
+  .clip-left-two {
+    clip-path: polygon(0 50%, 100% 100%, 0 100%);
+  }
+
+  /* Create triangle cutout on the right */
+  .clip-right {
+    clip-path: polygon(100% 0, 0% 50%, 100% 100%);
+  }
 }
 
 @theme {
   /* light colored texts */
   --color-primary: #63666b;
+  --color-button: #5aad00;
   --text-tiny: 14px;
   --text-tiny--line-height: 24px;
   /* --text-tiny--letter-spacing: 0.125rem; */

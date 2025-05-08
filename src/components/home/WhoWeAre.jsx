@@ -33,7 +33,7 @@ export const WhoWeAre = () => {
         <p className="pt-6">At vero eos et accusamus et iusto</p>
         <p className="pt-6">Natus error sit voluptatem accusantium</p>
 
-        <Button className="mt-13 bg-green-500 text-white font-semibold py-2 px-2 rounded-full hover:cursor-pointer">
+        <Button className="mt-13 bg-button text-white font-semibold py-2 px-2 rounded-full hover:cursor-pointer">
           Learn More
         </Button>
       </div>
