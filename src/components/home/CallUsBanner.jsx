@@ -3,9 +3,9 @@ import sewing from "@/images/sewing.jpg"; // Update path accordingly
 
 export const CallUsBanner = () => {
   return (
-    <div className="relative w-11/12 h-56 bg-[#5aad00] flex items-center overflow-hidden">
+    <div className="relative w-10/12 h-40 bg-[#64be04] flex items-center justify-center overflow-hidden ">
       {/* <i class="flaticon flaticon-yarn-1 absolute top-10 left-10 text-4xl text-button -z-1"></i> */}
-      <svg
+      {/* <svg
         class="lucide lucide-yarn absolute top-10 left-10 text-4xl text-red-600 -z-1"
         xmlns="http://www.w3.org/2000/svg"
         width="100"
@@ -18,7 +18,7 @@ export const CallUsBanner = () => {
         stroke-linejoin="round"
       >
         <path d="M6 2v8a4 4 0 0 1 4 4h8a4 4 0 0 1 4 4V2"></path>
-      </svg>
+      </svg> */}
       {/* Left Text Content */}
 
       <div className=" relative w-full md:w-2/3 px-6 z-10">
@@ -42,12 +42,13 @@ export const CallUsBanner = () => {
       </div>
 
       {/* Green Triangle Overlay */}
-      <div className="absolute right-97 top-0 h-full w-1/8 bg-[#5aad00] clip-left   z-10 " />
 
-      <div className="absolute right-97 top-0 h-full w-1/8 bg-[#5aad00] clip-left-two   z-10 " />
+      <div className=" hidden absolute right-97 top-0 h-full w-1/8 bg-[#5aad00] md:clip-left   z-10 " />
+
+      <div className=" hidden absolute right-97 top-0 h-full w-1/8 bg-[#5aad00] md:clip-left-two   z-10 " />
 
       {/* Right green triangle */}
-      <div className="absolute right-0 top-0 h-full w-1/8 bg-[#5aad00] clip-right z-20" />
+      <div className="hidden md:block absolute right-0 top-0 h-full w-1/8 bg-[#5aad00] md:clip-right z-20" />
     </div>
   );
 };

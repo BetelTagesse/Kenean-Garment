@@ -1,5 +1,6 @@
 import { CallUsBanner } from "@/components/home/CallUsBanner";
 import { NeedHelp } from "@/components/home/NeedHelp";
+import Services from "@/components/home/services/ServicesSection";
 import { ServicesCard } from "@/components/home/ServicesCard.jsx";
 import { ServicesSection } from "@/components/home/ServicesSection.jsx";
 import { SlidingImage } from "@/components/home/sliding_image.jsx";
@@ -25,6 +26,7 @@ export default function Home() {
       <WhoWeAre />
       {/* <NeedHelp /> */}
       <CallUsBanner />
+      <Services />
     </>
   );
 }

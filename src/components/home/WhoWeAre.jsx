@@ -4,7 +4,7 @@ import { Button } from "@/shared/Button";
 
 export const WhoWeAre = () => {
   return (
-    <div className="flex flex-col md:flex-row w-10/12 mx-auto py-10 gap-10 items-stretch">
+    <div className="flex flex-col md:flex-row w-10/12 mx-auto py-10 gap-10 items-stretch relative z-10">
       {/* Image Container */}
       <div className="w-1/2 md:w-1/2 flex min-h-[600px]">
         <Image

@@ -22,10 +22,10 @@ export const SlidingImage = ({ children }) => {
   }, []);
 
   return (
-    <div className="relative w-full h-[750px] overflow-hidden">
+    <div className="relative  w-full h-[750px] overflow-hidden">
       {/* background image */}
       <div
-        className="absolute inset-0 bg-center bg-cover brightness-50"
+        className="absolute  inset-0 bg-center bg-cover brightness-50"
         style={{ backgroundImage: `url(${images[currentIndex].src})` }}
       />
 

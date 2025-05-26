@@ -4,9 +4,9 @@ import { ServicesCard } from "./ServicesCard";
 export const ServicesSection = () => {
   return (
     <div
-      className="container mx-auto w-11/12 bg-white border-4 border-white 
-      flex flex-col md:flex-row md:justify-around items-center gap-10 
-      relative z-40 transform -translate-y-40 py-10"
+      className="container mx-auto w-10/12 bg-white  
+    flex flex-col md:flex-row md:justify-around items-center gap-10 
+    relative z-10  shadow-2xl -translate-y-40 py-10"
     >
       <ServicesCard
         MyIcon={Globe}
