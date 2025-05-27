@@ -17,7 +17,7 @@
 }
 @layer utilities {
   .animate-rotate-once {
-    transition: transform 0.6s ease;
+    transition: transform 0.9s ease;
   }
 
   .group:hover .animate-rotate-once {
@@ -66,6 +66,7 @@
   --color-primary: #63666b;
   --color-button: #5aad00;
   --color-green: rgb(91, 166, 0);
+  --color-background:#c0c0c0
   --text-tiny: 14px;
   --text-tiny--line-height: 24px;
   /* --text-tiny--letter-spacing: 0.125rem; */
