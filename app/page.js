@@ -1,5 +1,6 @@
 import { CallUsBanner } from "@/components/home/CallUsBanner";
 import { NeedHelp } from "@/components/home/NeedHelp";
+import ServicesListTwo from "@/components/home/services/ServicesListTwo";
 import Services from "@/components/home/services/ServicesSection";
 import { ServicesCard } from "@/components/home/ServicesCard.jsx";
 import { ServicesSection } from "@/components/home/ServicesSection.jsx";
@@ -27,6 +28,7 @@ export default function Home() {
       {/* <NeedHelp /> */}
       <CallUsBanner />
       <Services />
+      <ServicesListTwo />
     </>
   );
 }

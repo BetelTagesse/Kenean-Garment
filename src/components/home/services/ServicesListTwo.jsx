@@ -4,7 +4,7 @@ import { Globe, Layers } from "lucide-react";
 
 const ServicesListTwo = () => {
   return (
-    <div className="flex gap-3">
+    <div className=" flex gap-1 w-10/12 mx-auto ">
       <ServicesCardTwo
         MyIcon={require("lucide-react").Globe}
         title="Fabric Development"
