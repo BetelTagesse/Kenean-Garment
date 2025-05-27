@@ -14,7 +14,7 @@ export const ServicesCard = ({
       className={`w-1/2 flex flex-col items-center justify-center text-center p-6 group ${className}`}
     >
       {/* MyIcon that rotates once on hover */}
-      <MyIcon className="w-16 h-16 text-green-500  mb-4 animate-rotate-once" />
+      <MyIcon className="w-16 h-16 text-green mb-4 animate-rotate-once" />
 
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
 
@@ -25,10 +25,10 @@ export const ServicesCard = ({
         className="text-green-600 font-medium flex items-center gap-2 mb-4"
       >
         READ MORE
-        <ArrowRight className="text-green-500 text-2xl" />
+        <ArrowRight className="text-green text-2xl" />
       </Link>
 
-      <div className="h-0.5 w-0 bg-green-600 transition-all duration-500 group-hover:w-1/2"></div>
+      <div className="h-0.5 w-0 bg-green transition-all duration-500 group-hover:w-1/2"></div>
     </div>
   );
 };

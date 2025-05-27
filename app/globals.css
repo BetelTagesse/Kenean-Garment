@@ -38,13 +38,34 @@
   .clip-right {
     clip-path: polygon(100% 0, 0% 50%, 100% 100%);
   }
+  .animate-slider {
+    position: absolute;
+    animation: slider 2s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes slider {
+  0% {
+    background-color: rgb(91, 166, 0);
+    height: 14px;
+    width: 10px;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: rgb(91, 166, 0);
+    height: 14px;
+    width: 10px;
+    left: 110px;
+    top: 0px;
+  }
 }
 
 @theme {
   /* light colored texts */
   --color-primary: #63666b;
   --color-button: #5aad00;
-  --color-green: #64be04;
+  --color-green: rgb(91, 166, 0);
   --text-tiny: 14px;
   --text-tiny--line-height: 24px;
   /* --text-tiny--letter-spacing: 0.125rem; */

@@ -50,7 +50,7 @@ const MainHeader = () => {
 
       <FontAwesomeIcon
         icon={faBars}
-        className=" md:hidden text-coral-500 text-3xl cursor-pointer"
+        className=" hidden text-orange-500 text-3xl cursor-pointer"
       />
     </div>
   );

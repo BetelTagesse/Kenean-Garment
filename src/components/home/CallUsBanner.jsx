@@ -3,7 +3,7 @@ import sewing from "@/images/sewing.jpg"; // Update path accordingly
 
 export const CallUsBanner = () => {
   return (
-    <div className="relative w-10/12 h-40 bg-[#64be04] flex items-center justify-center overflow-hidden ">
+    <div className="relative w-10/12 h-40 bg-green flex items-center justify-center overflow-hidden ">
       {/* <i class="flaticon flaticon-yarn-1 absolute top-10 left-10 text-4xl text-button -z-1"></i> */}
       {/* <svg
         class="lucide lucide-yarn absolute top-10 left-10 text-4xl text-red-600 -z-1"
@@ -43,12 +43,12 @@ export const CallUsBanner = () => {
 
       {/* Green Triangle Overlay */}
 
-      <div className=" hidden absolute right-97 top-0 h-full w-1/8 bg-[#5aad00] md:clip-left   z-10 " />
+      <div className=" hidden absolute right-97 top-0 h-full w-1/8 bg-green md:clip-left   z-10 " />
 
-      <div className=" hidden absolute right-97 top-0 h-full w-1/8 bg-[#5aad00] md:clip-left-two   z-10 " />
+      <div className=" hidden absolute right-97 top-0 h-full w-1/8 bg-green md:clip-left-two   z-10 " />
 
       {/* Right green triangle */}
-      <div className="hidden md:block absolute right-0 top-0 h-full w-1/8 bg-[#5aad00] md:clip-right z-20" />
+      <div className="hidden md:block absolute right-0 top-0 h-full w-1/8 bg-green md:clip-right z-20" />
     </div>
   );
 };
