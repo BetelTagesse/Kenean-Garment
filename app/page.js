@@ -5,6 +5,7 @@ import Services from "@/components/home/services/ServicesSection";
 import { ServicesCard } from "@/components/home/ServicesCard.jsx";
 import { ServicesSection } from "@/components/home/ServicesSection.jsx";
 import { SlidingImage } from "@/components/home/sliding_image.jsx";
+import StatisticsSection from "@/components/home/statistics/StatisticsSection";
 import { WhoWeAre } from "@/components/home/WhoWeAre";
 import TestIconPage from "@/components/TestIcon";
 import { Button } from "@/shared/button";
@@ -28,6 +29,7 @@ export default function Home() {
       {/* <NeedHelp /> */}
       <CallUsBanner />
       <Services />
+      <StatisticsSection />
     </>
   );
 }
