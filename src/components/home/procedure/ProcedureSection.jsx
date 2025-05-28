@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../Slider";
+import ProcedureList from "./ProcedureList";
 
 const ProcedureSection = () => {
   return (
@@ -11,6 +12,7 @@ const ProcedureSection = () => {
         Four Step Working <span className="text-green">Process</span>
       </h2>
       <Slider />
+      <ProcedureList />
     </div>
   );
 };

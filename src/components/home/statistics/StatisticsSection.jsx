@@ -12,7 +12,7 @@ import StatisticsSingle from "./StatisticsSingle";
 
 const StatisticsSection = () => {
   return (
-    <div className="bg-purple w-full h-[280px] flex justify-center items-center">
+    <div className="bg-purple  w-full h-[280px] flex justify-center items-center">
       <div className="w-full max-w-7xl px-auto flex justify-between items-center gap-6">
         <StatisticsSingle
           MyIcon={Users2}
