@@ -1,11 +1,20 @@
 import FirstSection from "./FirstSection";
-import HoverCard from "./SingleWork";
+import SingleWork from "./SingleWork";
+import First from "../../../images/sewing.jpg";
+import Second from "../../../images/sewing.jpg";
+import Third from "../../../images/sewing.jpg";
+import Fourth from "../../../images/sewing.jpg";
 
 const RecentWorks = () => {
   return (
-    <div className="bg-purple h-fit w-full mt-30 ">
+    <div className="bg-purple h-fit w-full my-30  ">
       <FirstSection />
-      <HoverCard />
+      <div className=" flex  flex-col gap-10 items-center md:flex md:justify-between  w-3/4  mt-[120px] mx-auto pb-20">
+        <SingleWork src={First} alt="Chiffon Fabric" name="chiffon fabric" />
+        <SingleWork src={Second} alt="cotton fabric" name="cotton fabric" />
+        <SingleWork src={Third} alt="crepe fabric " name="crepe fabric" />
+        <SingleWork src={Fourth} alt="Denim fabric" name="Denim fabric" />
+      </div>
     </div>
   );
 };
