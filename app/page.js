@@ -1,6 +1,7 @@
 import { CallUsBanner } from "@/components/home/CallUsBanner";
 import { NeedHelp } from "@/components/home/NeedHelp";
 import ProcedureSection from "@/components/home/procedure/ProcedureSection";
+import RecentWorks from "@/components/home/recent_works/RecentWorks";
 import ServicesListTwo from "@/components/home/services/ServicesListTwo";
 import Services from "@/components/home/services/ServicesSection";
 import { ServicesCard } from "@/components/home/ServicesCard.jsx";
@@ -32,6 +33,7 @@ export default function Home() {
       <Services />
       <StatisticsSection />
       <ProcedureSection />
+      <RecentWorks />
     </>
   );
 }
