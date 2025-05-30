@@ -6,14 +6,14 @@ import Fourth from "../../../images/sewing.jpg";
 
 const ProcedureList = () => {
   return (
-    <div className="flex md:flex-1/2 mt-20 w-full max-w-7xl mx-auto ">
+    <div className="grid  sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full lg:w-10/12 mx-auto md:mt-10 justify-items-center">
       <SingleProcedure
         number={1}
         src={First}
         alt="Person holding a thread"
         title="Fabric Development"
         description="There are many variations of majority have suffered."
-        className="relative top-[70px]"
+        className="lg:relative lg:top-[70px]"
       />
 
       <SingleProcedure
@@ -30,7 +30,7 @@ const ProcedureList = () => {
         alt="Person holding a thread"
         title="Prepare production"
         description="There are many variations of majority have suffered."
-        className="relative top-[70px]"
+        className="lg:relative lg:top-[70px]"
       />
 
       <SingleProcedure

@@ -8,7 +8,7 @@ const ProcedureSection = () => {
       <p className="text-green text-center text-[16px] font-semibold">
         WORKING PROCESS
       </p>
-      <h2 className=" text-4xl text-black font-semibold text-center mt-4">
+      <h2 className=" text-4xl text-black font-semibold text-center mt-4 ">
         Four Step Working <span className="text-green">Process</span>
       </h2>
       <Slider />

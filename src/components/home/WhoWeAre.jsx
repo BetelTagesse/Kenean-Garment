@@ -7,9 +7,9 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export const WhoWeAre = () => {
   return (
-    <div className="flex flex-col md:flex-row w-10/12 mx-auto py-10 gap-10 items-stretch relative z-10">
+    <div className="flex flex-col md:flex-row w-10/12 mx-auto py-10 md:gap-10  items-center-safe md:items-stretch relative z-10">
       {/* Image Container */}
-      <div className="w-1/2 md:w-1/2 flex min-h-[600px]">
+      <div className="w-full md:w-1/2  max-h-[600px]">
         <Image
           src={designer}
           alt="image of a garment worker"
@@ -18,7 +18,7 @@ export const WhoWeAre = () => {
       </div>
 
       {/* Text Content */}
-      <div className="w-1/2 md:w-1/2 flex flex-col justify-start px-3 py-10 max-w-xl">
+      <div className="w-full md:w-1/2 flex flex-col justify-start px-3 py-10 max-w-xl">
         <p className="text-green pb-4 font-bold"> WHO WE ARE</p>
         <p className="text-gray-900 text-3xl md:text-4xl capitalize leading-snug">
           The Best Textile <span className="text-green">Company</span> In{" "}

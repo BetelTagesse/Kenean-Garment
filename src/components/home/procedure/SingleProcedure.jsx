@@ -10,7 +10,7 @@ const SingleProcedure = ({
 }) => {
   return (
     <div
-      className={` w-1/2 flex flex-col items-center justify-center   transition-transform duration-300 hover:translate-y-10 ${className}`}
+      className={` w-1/2 flex flex-col items-center justify-center    transition-transform duration-300 hover:translate-y-10 ${className}`}
     >
       <div className="relative w-[200px] h-[200px] ">
         {/* Badge */}

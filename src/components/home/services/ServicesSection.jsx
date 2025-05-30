@@ -15,7 +15,7 @@ const Services = () => {
         </h2>
         <Slider />
       </div>
-      <div className="mt-80">
+      <div className=" mt-40 md:mt-80">
         {" "}
         <ServicesListTwo />
       </div>
