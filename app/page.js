@@ -1,4 +1,6 @@
 import { CallUsBanner } from "@/components/home/CallUsBanner";
+import FirstPart from "@/components/home/choose_us/FirstPart";
+import WholePart from "@/components/home/choose_us/WholePart";
 import { NeedHelp } from "@/components/home/NeedHelp";
 import ProcedureSection from "@/components/home/procedure/ProcedureSection";
 import RecentWorks from "@/components/home/recent_works/RecentWorks";
@@ -34,6 +36,7 @@ export default function Home() {
       <StatisticsSection />
       <ProcedureSection />
       <RecentWorks />
+      <WholePart />
     </>
   );
 }

@@ -9,7 +9,7 @@ const RecentWorks = () => {
   return (
     <div className="bg-purple h-fit w-full my-30  ">
       <FirstSection />
-      <div className=" flex  flex-col gap-10 items-center md:flex md:justify-between  w-3/4  mt-[120px] mx-auto pb-20">
+      <div className=" flex  flex-col md:flex-row  gap-10 items-center md:justify-between  w-3/4  mt-[120px] mx-auto pb-20">
         <SingleWork src={First} alt="Chiffon Fabric" name="chiffon fabric" />
         <SingleWork src={Second} alt="cotton fabric" name="cotton fabric" />
         <SingleWork src={Third} alt="crepe fabric " name="crepe fabric" />
