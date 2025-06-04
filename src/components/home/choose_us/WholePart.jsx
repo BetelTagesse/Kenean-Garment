@@ -11,8 +11,8 @@ const WholePart = () => {
         <h2 className="text-5xl py-5">
           Why People <span className="text-green font-bold">Choose Us</span>
         </h2>
-        <div className="flex justify-between">
-          <div>
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div className="p-2 md:w-full ">
             <FirstPart
               MyIcon={Users2}
               heading="Low Price Of Cost"
@@ -29,13 +29,11 @@ const WholePart = () => {
               description="There are many variations of passages but the majority have suffered alteration"
             />
           </div>
-          <div className="w-full h-full  md:w-1/2  max-h-[600px]">
-            <Image
-              src={designer}
-              alt="image of a garment worker"
-              className="rounded-4xl opacity-90 p-3 py-5 object-cover h-full w-full"
-            />{" "}
-          </div>
+          <Image
+            src={designer}
+            alt="image of a garment worker"
+            className="rounded-4xl opacity-90 p-3 py-5 object-cover hidden md:block h-full w-full md:w-full md:h-full "
+          />{" "}
         </div>
       </div>
     </div>

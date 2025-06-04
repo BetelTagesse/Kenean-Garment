@@ -14,12 +14,18 @@
   .main-header {
     @apply bg-purple text-white py-2 px-4;
   }
+  /* .choose-us{
+    @apply hover:bg-green;
+  } */
 }
 @layer utilities {
   .animate-rotate-once {
     transition: transform 0.9s ease;
   }
-
+.choose-us:hover{
+  background-color:rgb(91, 166, 0); 
+  color:aliceblue;
+}
   .group:hover .animate-rotate-once {
     transform: rotate(-360deg);
   }
