@@ -12,7 +12,7 @@ const WholePart = () => {
           Why People <span className="text-green font-bold">Choose Us</span>
         </h2>
         <div className="flex flex-col lg:flex-row justify-between">
-          <div className="p-2 md:w-full ">
+          <div className="lg:p-2 md:w-full sm:w-full ">
             <FirstPart
               MyIcon={Users2}
               heading="Low Price Of Cost"

@@ -1,3 +1,4 @@
+import BlogWholePart from "@/components/home/blog/BlogWholePart";
 import { CallUsBanner } from "@/components/home/CallUsBanner";
 import FirstPart from "@/components/home/choose_us/FirstPart";
 import WholePart from "@/components/home/choose_us/WholePart";
@@ -37,6 +38,7 @@ export default function Home() {
       <ProcedureSection />
       <RecentWorks />
       <WholePart />
+      <BlogWholePart />
     </>
   );
 }
