@@ -10,7 +10,7 @@
 // const blogData = [
 //   {
 //     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-//     date: "Feb 25, 2023",
+//     date: "Feb 25, 2025",
 //     comments: "20",
 //     category: "Business",
 //     title: "There Are Many Variations Of Passages Available",
@@ -19,7 +19,7 @@
 //   },
 //   {
 //     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-//     date: "Feb 25, 2023",
+//     date: "Feb 25, 2025",
 //     comments: "20",
 //     category: "Daily Textile",
 //     title: "There Are Many Variations Of Passages Available",
@@ -28,7 +28,7 @@
 //   },
 //   {
 //     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-//     date: "Feb 25, 2023",
+//     date: "Feb 25, 2025",
 //     comments: "20",
 //     category: "Lifestyle",
 //     title: "There Are Many Variations Of Passages Available",
@@ -37,7 +37,7 @@
 //   },
 //   {
 //     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-//     date: "Feb 25, 2023",
+//     date: "Feb 25, 2025",
 //     comments: "20",
 //     category: "Textile",
 //     title: "Passages Available In The Factory",
@@ -77,11 +77,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import Link from "next/link";
 
 const blogData = [
   {
     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2023",
+    date: "Feb 25, 2025",
     comments: "20",
     category: "Business",
     title: "There Are Many Variations Of Passages Available",
@@ -90,7 +91,7 @@ const blogData = [
   },
   {
     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2023",
+    date: "Feb 25, 2025",
     comments: "20",
     category: "Daily Textile",
     title: "There Are Many Variations Of Passages Available",
@@ -99,7 +100,7 @@ const blogData = [
   },
   {
     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2023",
+    date: "Feb 25, 2025",
     comments: "20",
     category: "Lifestyle",
     title: "There Are Many Variations Of Passages Available",
@@ -108,7 +109,7 @@ const blogData = [
   },
   {
     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2023",
+    date: "Feb 25, 2025",
     comments: "20",
     category: "Textile",
     title: "Passages Available In The Factory",
@@ -117,7 +118,7 @@ const blogData = [
   },
   {
     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2023",
+    date: "Feb 25, 2025",
     comments: "20",
     category: "Daily Textile",
     title: "There Are Many Variations Of Passages Available",
@@ -126,7 +127,7 @@ const blogData = [
   },
   {
     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2023",
+    date: "Feb 25, 2025",
     comments: "20",
     category: "Lifestyle",
     title: "There Are Many Variations Of Passages Available",
@@ -135,7 +136,7 @@ const blogData = [
   },
   {
     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2023",
+    date: "Feb 25, 2025",
     comments: "20",
     category: "Textile",
     title: "Passages Available In The Factory",
@@ -164,7 +165,7 @@ const BlogSlider = () => {
       >
         {blogData.map((blog, index) => (
           <SwiperSlide key={index}>
-            <div className="  rounded-xl  overflow-hidden hover:shadow-xl transition-all duration-300">
+            <div className="  rounded-xl  overflow-hidden  hover:scale-105 transition-transform duration-700 ">
               <div className="overflow-hidden rounded-xl shadow-lg">
                 <img
                   src={blog.image}
@@ -181,16 +182,16 @@ const BlogSlider = () => {
                   <span>/</span>
                   <span>📁 {blog.category}</span>
                 </div>
-                <h3 className="mt-2 text-lg font-bold text-gray-800">
+                <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-green">
                   {blog.title}
                 </h3>
                 <p className="text-gray-600 mt-2">{blog.excerpt}</p>
-                <a
+                <Link
                   href="#"
-                  className="inline-block mt-4 text-green-600 font-semibold hover:underline"
+                  className="inline-block font-medium mt-4 text-sm hover:text-green"
                 >
-                  READ MORE →
-                </a>
+                  READ MORE <span className="text-green px-2"> → </span>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

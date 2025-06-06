@@ -9,6 +9,7 @@ import TestIcon from "@/components/TestIcon";
 import { NavBar } from "@/components/NavBar";
 
 import Head from "next/head"; // ✅ Import Head
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Canaan Garment",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <MainHeader />
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
