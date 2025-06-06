@@ -1,6 +1,6 @@
 const BlogCard = ({ image, date, comments, category, title, excerpt }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+    <div className=" rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
       <div className="relative h-80 overflow-hidden">
         <img
           src={image}
