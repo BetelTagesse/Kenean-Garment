@@ -14,7 +14,7 @@ const Footer = () => {
         <MainSection />
       </div>
       {/* Bottom Section: Copyright */}
-      <div className="text-center w-full   bg-purple border-t border-gray-700 p-4">
+      <div className="text-center w-full   bg-purple  p-6">
         <p>Copyright © 2025 TEXTILE All rights reserved.</p>
       </div>
     </footer>
