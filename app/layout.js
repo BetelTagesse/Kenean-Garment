@@ -9,7 +9,7 @@ import TestIcon from "@/components/TestIcon";
 import { NavBar } from "@/components/NavBar";
 
 import Head from "next/head"; // ✅ Import Head
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
   title: "Canaan Garment",

@@ -1,6 +1,5 @@
 import Image from "next/image";
-import sewing from "@/images/sewing.jpg"; // Update path accordingly
-
+import sewing from "@/images/sewing.jpg";
 export const CallUsBanner = () => {
   return (
     <div className="relative w-10/12 h-40 bg-green flex items-center justify-center overflow-hidden ">

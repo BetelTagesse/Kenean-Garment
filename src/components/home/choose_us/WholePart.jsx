@@ -5,7 +5,7 @@ import designer from "../../../images/sewing.jpg";
 
 const WholePart = () => {
   return (
-    <div className="  w-full">
+    <div className="  w-full mt-20">
       <div className="w-4/5 mx-auto ">
         <p className="text-green text-5xl font-bold ">CHOOSE</p>
         <h2 className="text-5xl py-5">

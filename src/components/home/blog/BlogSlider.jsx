@@ -112,7 +112,7 @@ const blogData = [
     date: "Feb 25, 2025",
     comments: "20",
     category: "Textile",
-    title: "Passages Available In The Factory",
+    title: "Passages Available In The Factory are variable",
     excerpt:
       "It is a long established fact that a reader will be distracted by the...",
   },
@@ -139,7 +139,7 @@ const blogData = [
     date: "Feb 25, 2025",
     comments: "20",
     category: "Textile",
-    title: "Passages Available In The Factory",
+    title: "Passages Available In The Factory are variable",
     excerpt:
       "It is a long established fact that a reader will be distracted by the...",
   },
@@ -150,7 +150,7 @@ const BlogSlider = () => {
     <div className="w-5/6  mx-auto py-10">
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={4}
+        slidesPerView={3}
         spaceBetween={20}
         loop={true}
         autoplay={{
@@ -160,20 +160,20 @@ const BlogSlider = () => {
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 },
+          1024: { slidesPerView: 3 },
         }}
       >
         {blogData.map((blog, index) => (
           <SwiperSlide key={index}>
-            <div className="  rounded-xl  overflow-hidden  hover:scale-105 transition-transform duration-700 ">
-              <div className="overflow-hidden rounded-xl shadow-lg">
+            <div className="  rounded-xl  overflow-hidden hover:scale-105 transition-transform duration-700  ">
+              <div className="overflow-hidden rounded-xl shadow-lg ">
                 <img
                   src={blog.image}
                   alt={`Garment ${index + 1}`}
-                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="p-5   bg-white mx-auto w-10/12 relative z-10  shadow-2xl -translate-y-20 ">
+              <div className="p-5   bg-white   mx-auto w-11/12 relative z-10  shadow-xl -translate-y-20 ">
                 <div className="absolute top-0 right-0 bg-green text-white text-sm px-4 py-2   font-semibold ">
                   📅 {blog.date}
                 </div>
@@ -182,7 +182,7 @@ const BlogSlider = () => {
                   <span>/</span>
                   <span>📁 {blog.category}</span>
                 </div>
-                <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-green">
+                <h3 className="mt-2 text-lg  font-bold text-gray-800 hover:text-green">
                   {blog.title}
                 </h3>
                 <p className="text-gray-600 mt-2">{blog.excerpt}</p>

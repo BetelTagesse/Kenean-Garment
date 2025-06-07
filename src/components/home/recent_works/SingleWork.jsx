@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const SingleWork = ({ src, alt, name }) => {
   return (
-    <div className="relative group w-3/4  md:w-[280px] h-[300px] overflow-hidden rounded-2xl shadow-lg hover:scale-110 duration-300 ">
+    <div className="relative group w-3/4 md:w-full  h-[300px] overflow-hidden rounded-2xl shadow-lg hover:scale-110 duration-300 ">
       {/* Image */}
       <Image src={src} alt={alt} className="object-cover w-full h-full " />
 

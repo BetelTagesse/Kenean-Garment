@@ -7,12 +7,12 @@ import Fourth from "../../../images/sewing.jpg";
 
 const RecentWorks = () => {
   return (
-    <div className="bg-purple h-fit w-full my-30  ">
+    <div className="bg-purple w-full mt-40 py-15">
       <FirstSection />
-      <div className=" flex  flex-col md:flex-1/2 lg:flex-row  gap-10 items-center md:justify-between  w-3/4  mt-[120px] mx-auto pb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-10 w-11/12 mt-20 mx-auto pb-20">
         <SingleWork src={First} alt="Chiffon Fabric" name="chiffon fabric" />
         <SingleWork src={Second} alt="cotton fabric" name="cotton fabric" />
-        <SingleWork src={Third} alt="crepe fabric " name="crepe fabric" />
+        <SingleWork src={Third} alt="crepe fabric" name="crepe fabric" />
         <SingleWork src={Fourth} alt="Denim fabric" name="Denim fabric" />
       </div>
     </div>
