@@ -6,7 +6,7 @@ import Fourth from "../../../images/sewing.jpg";
 
 const ProcedureList = () => {
   return (
-    <div className="grid  sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full lg:w-10/12 mx-auto md:mt-10 justify-items-center">
+    <div className="grid  sm:grid-cols-2 mt-20 lg:grid-cols-4 gap-6 w-full lg:w-10/12 mx-auto justify-items-center">
       <SingleProcedure
         number={1}
         src={First}

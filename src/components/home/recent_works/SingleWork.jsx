@@ -7,7 +7,11 @@ const SingleWork = ({ src, alt, name }) => {
   return (
     <div className="relative group w-3/4 md:w-full  h-[300px] overflow-hidden rounded-2xl shadow-lg hover:scale-110 duration-300 ">
       {/* Image */}
-      <Image src={src} alt={alt} className="object-cover w-full h-full " />
+      <Image
+        src={src}
+        alt={alt}
+        className="object-cover w-full h-full  overflow-hidden hover:scale-105 transition-transform duration-700"
+      />
 
       {/* Overlay on hover */}
       <div className="absolute inset-0  bg-opacity-60 flex flex-col justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
