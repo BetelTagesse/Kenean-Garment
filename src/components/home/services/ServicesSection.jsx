@@ -5,8 +5,8 @@ import ServicesListTwo from "./ServicesListTwo";
 
 const Services = () => {
   return (
-    <>
-      <div className="relative top-10 p-6 mb-60 bg-background h-full w-full ">
+    <div className="bg-[eae6e5]">
+      <div className="relative top-10 p-6 mb-60  h-full w-full ">
         <p className="text-green text-center text-[16px] font-semibold">
           SERVICES
         </p>
@@ -15,11 +15,12 @@ const Services = () => {
         </h2>
         <Slider />
       </div>
-      <div className=" ">
+      <ServicesListTwo />
+      {/* <div className=" bg-amber-50 ">
         {" "}
-        <ServicesListTwo />
-      </div>
-    </>
+        
+      </div> */}
+    </div>
   );
 };
 

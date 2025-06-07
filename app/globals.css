@@ -14,7 +14,6 @@
   .main-header {
     @apply bg-purple text-white py-2 px-4;
   }
-
 }
 @layer utilities {
   .animate-rotate-once {
@@ -68,7 +67,7 @@
   --color-button: #5aad00;
   --color-green: rgb(91, 166, 0);
   --color-purple: #061539;
-  --color-background:#c0c0c0
+  --color-background: #c0c0c0;
   --text-tiny: 14px;
   --text-tiny--line-height: 24px;
   /* --text-tiny--letter-spacing: 0.125rem; */
