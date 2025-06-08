@@ -19,15 +19,17 @@ export default function Home() {
   return (
     <>
       <SlidingImage>
-        <h2 className="text-3xl text-gray-400 font-bold mb-4">
-          We Are From - 2019
-        </h2>
-        <h2 className="text-6xl text-gray-200 mb-6">
-          Get Quality Fabric For <br /> Your Business
-        </h2>
-        <Button className="bg-green  font-bold px-8 py-2 hover:from-blue-900 hover:to-blue-950">
-          LEARN MORE
-        </Button>
+        <div className="mx-auto w-11/12 justify-items-stretch ">
+          <h2 className="text-3xl text-gray-400 font-bold mb-4">
+            We Are From - 2019
+          </h2>
+          <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold text-gray-200 mb-6">
+            Get Quality Fabric For <br /> Your Business
+          </h2>
+          <Button className="bg-green  font-bold px-8 py-2 hover:from-blue-900 hover:to-blue-950">
+            LEARN MORE
+          </Button>
+        </div>
       </SlidingImage>
       <ServicesSection />
       <WhoWeAre />

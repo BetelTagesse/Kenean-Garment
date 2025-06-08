@@ -68,6 +68,8 @@
   --color-green: rgb(91, 166, 0);
   --color-purple: #061539;
   --color-background: #c0c0c0;
+  --color-image: rgb(85, 92, 99);
+
   --text-tiny: 14px;
   --text-tiny--line-height: 24px;
   /* --text-tiny--letter-spacing: 0.125rem; */
