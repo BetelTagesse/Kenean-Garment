@@ -2,7 +2,7 @@ import Slider from "../Slider";
 
 const FirstPart = () => {
   return (
-    <div className="relative top-10 p-6 mb-20 bg-background h-full w-full ">
+    <div className="relative top-10 p-6 mb-20  h-full w-full ">
       <p className="text-green text-center text-[16px] font-semibold">
         OUR BLOG
       </p>

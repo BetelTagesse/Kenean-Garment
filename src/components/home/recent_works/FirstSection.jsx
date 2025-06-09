@@ -3,7 +3,7 @@ import Slider from "../Slider";
 
 const FirstSection = () => {
   return (
-    <div className="relative top-10  bg-background h-full w-full  ">
+    <div className="relative top-10  h-full w-full  ">
       <p className="text-green text-center text-[16px] font-semibold">
         Recent Works
       </p>

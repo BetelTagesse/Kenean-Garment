@@ -29,14 +29,14 @@ export const SlidingImage = ({ children }) => {
         onClick={() => {
           setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
         }}
-        className="absolute top-1/2 left-4 transform -translate-y-20 bg-green text-white px-2 py-2 rounded-full shadow-lg hover:bg-purple transition duration-300 z-10 opacity-0 group-hover:opacity-100"
+        className="hidden lg:block absolute top-1/2 left-4 transform -translate-y-20 bg-green text-white px-2 py-2 rounded-full shadow-lg hover:bg-purple transition duration-300 z-10 opacity-0 group-hover:opacity-100"
       >
         <ChevronLeft size={24} />
       </button>
 
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-center bg-cover bg-image  brightness-50"
+        className="absolute inset-0 bg-center bg-cover brightness-50"
         style={{
           backgroundImage: `url(${images[currentIndex].src})`,
           backgroundColor: "rgb(85, 92, 99)",
@@ -48,7 +48,7 @@ export const SlidingImage = ({ children }) => {
         onClick={() => {
           setCurrentIndex((prev) => (prev + 1) % images.length);
         }}
-        className="absolute top-1/2 right-4 transform -translate-y-20 bg-green text-white px-2 py-2 rounded-full shadow-lg hover:bg-purple transition duration-300 z-10 opacity-0 group-hover:opacity-100"
+        className="hidden lg:block absolute top-1/2 right-4 transform -translate-y-20 bg-green text-white px-2 py-2 rounded-full shadow-lg hover:bg-purple transition duration-300 z-10 opacity-0 group-hover:opacity-100"
       >
         <ChevronRight size={24} />
       </button>
