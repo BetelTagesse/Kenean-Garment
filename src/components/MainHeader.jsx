@@ -2,12 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faClock,
-  faBars,
-  faXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faClock, faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import logo from "../images/cola.png";
 import phone from "../public/phone.svg";
 import "../../app/globals.css";

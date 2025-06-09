@@ -53,9 +53,6 @@ export const SlidingImage = ({ children }) => {
         <ChevronRight size={24} />
       </button>
 
-      {/* Bluish Filter */}
-      <div className="absolute inset-0 bg-blue-900 opacity-20 mix-blend-multiply" />
-
       {/* Content */}
       <div className="relative flex flex-col justify-center items-start h-full text-white p-20">
         {children}

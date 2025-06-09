@@ -3,7 +3,7 @@ import React from "react";
 const ServicesCardTwo = ({ MyIcon, title, description, className = "" }) => {
   return (
     <div
-      className={`  mx-auto w-90 lg:w-80 bg-white  
+      className={`  mx-auto  w-96  md:w-80 lg:w-90 max-w-full bg-white  
     flex flex-col  items-start  rounded-3xl 
      z-10 shadow-2xl   -translate-y-40 py-10 px-3 ${className}`}
     >

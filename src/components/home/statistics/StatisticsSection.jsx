@@ -1,17 +1,19 @@
 "use client";
-import React from "react";
 import { Award, CalendarCheck, Layers, Users2 } from "lucide-react";
 import StatisticsSingle from "./StatisticsSingle";
 
-const StatisticsSection = () => {
+const StatisticsSection = ({ className = "", bgColor = "bg-purple" }) => {
   return (
-    <div className="bg-purple w-full sm:h-[500px] md:h-[280px]  flex justify-center items-center">
+    <div
+      className={`  w-full sm:h-[500px] md:h-[280px]  flex justify-center items-center ${bgColor} ${className}`}
+    >
       <div className="w-full max-w-7xl px-6">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10 text-center justify-items-center">
           <StatisticsSingle
             MyIcon={Users2}
             counter="1000"
             description="Satisfied Clients"
+            className=""
           />
           <StatisticsSingle
             MyIcon={Layers}
