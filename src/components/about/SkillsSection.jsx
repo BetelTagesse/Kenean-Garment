@@ -9,12 +9,12 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <div className="flex flex-col lg:flex-row w-full  mt-20 ">
+    <div className="flex   w-full  mt-20 ">
       {/* Left Content */}
-      <div className="lg:w-1/2 bg-[#0A1A3A] text-white px-10 py-12">
-        <p className="text-green-500 font-semibold text-sm mb-2">SKILLS</p>
+      <div className="md:w-1/2 bg-[#0A1A3A] text-white  px-10 lg:px-30 py-12">
+        <p className="text-green font-semibold text-sm mb-2">SKILLS</p>
         <h2 className="text-4xl font-bold mb-4">
-          Grow Your <span className="text-green-500">Business</span> With Us
+          Grow Your <span className="text-green">Business</span> With Us
         </h2>
         <p className="text-gray-300 mb-8">
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -41,11 +41,10 @@ const SkillsSection = () => {
       </div>
 
       {/* Right Section */}
-      <div className="lg:w-1/2 h-96 lg:h-auto relative">
+      <div className=" hidden md:block md:w-1/2 h-96 md:h-auto relative">
         <Image
           src={First}
           alt="Fabric Rolls"
-          layout="fill"
           objectFit="cover"
           className="w-full h-full"
           priority

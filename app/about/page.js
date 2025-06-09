@@ -11,14 +11,19 @@ export default function About() {
       <Image
         src={First}
         alt="Background"
-        objectFit="cover"
-        className="brightness-50 z-0"
+        objectFit=""
+        className=" h-56 w-full brightness-50 z-0"
         priority
       />
       <WhoWeAre />
       <Services />
-
-      <StatisticsSection bgColor="bg-green" className="items-white" />
+      <div className="w-5/6 mx-auto">
+        <StatisticsSection
+          bgColor="bg-green"
+          iconColor="text-white"
+          textColor="text-white"
+        />
+      </div>
 
       <SkillsSection />
     </div>

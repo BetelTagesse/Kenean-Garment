@@ -36,10 +36,11 @@ export const SlidingImage = ({ children }) => {
 
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-center bg-cover brightness-50"
+        className="absolute inset-0 bg-center bg-cover  brightness-50"
         style={{
           backgroundImage: `url(${images[currentIndex].src})`,
           backgroundColor: "rgb(85, 92, 99)",
+          objectFit: "cover",
         }}
       />
 

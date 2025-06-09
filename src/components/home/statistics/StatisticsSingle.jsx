@@ -1,7 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const StatisticsSingle = ({ MyIcon, counter, description, className = "" }) => {
+const StatisticsSingle = ({
+  MyIcon,
+  counter,
+  description,
+  iconColor = "text-green",
+  textColor = " text-gray-200",
+}) => {
   const target = parseInt(counter);
   const [count, setCount] = useState(0);
 
@@ -27,9 +33,9 @@ const StatisticsSingle = ({ MyIcon, counter, description, className = "" }) => {
 
   return (
     <div className="md:w-4/3 lg:w-4/5 flex flex-col items-center justify-center    p-3 lg:p-6  ">
-      <MyIcon className={`w-20 h-20 text-green mb-10${className}`} />
-      <h2 className="text-3xl  text-gray-200 font-bold ">{count} +</h2>
-      <p className="text-gray-300  font-normal text-lg text-start ">
+      <MyIcon className={`w-20 h-20 text-green mb-10 ${iconColor}`} />
+      <h2 className={`text-3xl  font-bold ${textColor} `}>{count} +</h2>
+      <p className={` ${textColor} font-normal text-lg text-start`}>
         {description}
       </p>
     </div>
