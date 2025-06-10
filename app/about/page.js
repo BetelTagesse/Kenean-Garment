@@ -4,6 +4,8 @@ import { WhoWeAre } from "@/components/home/WhoWeAre";
 import Image from "next/image";
 import First from "@/images/sewing.jpg";
 import SkillsSection from "@/components/about/SkillsSection";
+import OurTeam from "@/components/about/OurTeam";
+import FirstPart from "@/components/about/FirstPart";
 
 export default function About() {
   return (
@@ -26,6 +28,9 @@ export default function About() {
       </div>
 
       <SkillsSection />
+
+      <FirstPart />
+      <OurTeam />
     </div>
   );
 }
