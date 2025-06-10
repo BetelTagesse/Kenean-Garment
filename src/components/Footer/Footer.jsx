@@ -15,7 +15,10 @@ const Footer = () => {
       </div>
       {/* Bottom Section: Copyright */}
       <div className="text-center w-full   bg-purple  p-6">
-        <p>Copyright © 2025 TEXTILE All rights reserved.</p>
+        <p>
+          Copyright © 2025 <span className="text-green">TEXTILE </span> All
+          rights reserved.
+        </p>
       </div>
     </footer>
   );

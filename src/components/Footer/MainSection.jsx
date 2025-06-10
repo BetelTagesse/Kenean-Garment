@@ -131,12 +131,13 @@ const MainSection = () => {
               <Phone size={20} className="text-green flex-shrink-0" />
               <p className="text-gray-400">(+1) 123 654 7894</p>
             </div>
-            <div className="flex items-center space-x-3">
-              <Link href="info@domain.com">
+
+            <Link href="info@domain.com">
+              <div className="flex  items-center  space-x-3">
                 <Mail size={20} className="text-green flex-shrink-0" />
                 <p className="text-gray-400">info@domain.com</p>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

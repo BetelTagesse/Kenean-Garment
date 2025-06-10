@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Mail,
   Phone,
@@ -20,35 +21,35 @@ const FirstSection = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex space-x-6">
-          <a
+        <div className="flex space-x-1">
+          <Link
             href="#"
-            className="text-gray-300 hover:text-white transition-colors duration-200"
+            className="text-gray-300 bg-purple p-4 rounded-full hover:text-white hover:bg-green  transition-colors duration-200 "
           >
             <Facebook size={24} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
-            className="text-gray-300 hover:text-white transition-colors duration-200"
+            className="text-gray-300  bg-purple p-4 rounded-full hover:text-white hover:bg-green transition-colors duration-200"
           >
             <Twitter size={24} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
-            className="text-gray-300 hover:text-white transition-colors duration-200"
+            className="text-gray-300  bg-purple p-4 rounded-full hover:text-white hover:bg-green transition-colors duration-200"
           >
             <Linkedin size={24} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
-            className="text-gray-300 hover:text-white transition-colors duration-200"
+            className="text-gray-300  bg-purple p-4 rounded-full hover:text-white hover:bg-green transition-colors duration-200"
           >
             <Instagram size={24} />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#"
-            className="text-gray-300 hover:text-white transition-colors duration-200"
+            className="text-gray-300  bg-purple p-4 rounded-full hover:text-white hover:bg-green transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +65,7 @@ const FirstSection = () => {
             >
               <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </>
