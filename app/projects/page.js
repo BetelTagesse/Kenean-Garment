@@ -1,6 +1,4 @@
-import Projects from "@/components/projects/SingleProject.jsx";
-import ProjectSingle from "@/components/projects/ProjectsSingle.jsx";
-import React from "react";
+import Projects from "@/components/projects/projects.jsx";
 
 const page = () => {
   return (
