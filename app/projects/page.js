@@ -1,9 +1,11 @@
 import Projects from "@/components/projects/projects.jsx";
+import ProjectsDetailSingle from "@/components/projects/ProjectsDetailSingle";
 
 const page = () => {
   return (
     <div>
-      <Projects />
+      {/* <Projects /> */}
+      <ProjectsDetailSingle />
     </div>
   );
 };
