@@ -24,7 +24,7 @@ export default function FirstSection() {
       {/* Form */}
       <div className="bg-white shadow p-8 rounded-lg">
         <h2 className="text-3xl font-semibold text-gray-800 mb-2">
-          Send Your <span className="text-green-600 font-bold">Message</span>
+          Send Your <span className="text-green font-bold">Message</span>
         </h2>
         <p className="text-gray-500 mb-6">
           Feel free to contact with us. We are ready to assist you.
@@ -73,7 +73,7 @@ export default function FirstSection() {
 
           <button
             type="submit"
-            className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700"
+            className="bg-green text-white px-6 py-3 rounded hover:bg-blue-950"
           >
             SEND MESSAGE
           </button>
