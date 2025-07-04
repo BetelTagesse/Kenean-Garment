@@ -8,7 +8,7 @@ import MainHeader from "@/components/MainHeader";
 import TestIcon from "@/components/TestIcon";
 import { NavBar } from "@/components/NavBar";
 
-import Head from "next/head"; // ✅ Import Head
+import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
 import HeaderWrapper from "@/components/HeaderWrapper";
 

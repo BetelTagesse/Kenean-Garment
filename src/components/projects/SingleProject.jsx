@@ -5,7 +5,7 @@ import { Search, Shuffle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const SingleProject = ({ src, alt, name }) => {
+const SingleProject = ({ src, alt, name, slug }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -31,7 +31,7 @@ const SingleProject = ({ src, alt, name }) => {
             </div>
 
             {/* Shuffle icon from right */}
-            <Link href="/">
+            <Link href={`/projects/${slug}`}>
               <div className="transform translate-x-10 group-hover:translate-x-0 transition-all duration-500 bg-white hover:bg-green p-3 rounded shadow cursor-pointer hover:scale-110">
                 <Shuffle className="w-5 h-5 text-black font-extrabold" />
               </div>
