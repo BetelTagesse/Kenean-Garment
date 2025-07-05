@@ -1,18 +1,36 @@
 import Image from "next/image";
+import PageBanner from "./PageBanner";
+import ProjectInfo from "./ProjectInfo";
+import ProjectDescription from "./ProjectDescription";
 
 const ProjectDetails = ({ project }) => {
+  console.log("project info:", {
+    client: project.client,
+    price: project.price,
+    date: project.date,
+    status: project.status,
+  });
+
   return (
-    <section className="max-w-5xl mx-auto px-6 py-12">
-      <Image
+    <div className="space-y-20">
+      <PageBanner title={project.name} backgroundImage={project.image} />
+
+      <ProjectInfo
         src={project.image}
         alt={project.name}
-        width={800}
-        height={500}
-        className="rounded-lg shadow mb-6 w-full h-auto object-cover"
+        projectName={project.name}
+        category={project.category}
+        client={project.client}
+        date={project.date}
+        price={project.price}
+        website={project.website}
+        status={project.status}
       />
-      <h1 className="text-3xl font-bold mb-4">{project.name}</h1>
-      <p className="text-gray-700">{project.description}</p>
-    </section>
+      <ProjectDescription
+        name={project.name}
+        description={project.description}
+      />
+    </div>
   );
 };
 
