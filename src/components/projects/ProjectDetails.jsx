@@ -2,6 +2,7 @@ import Image from "next/image";
 import PageBanner from "./PageBanner";
 import ProjectInfo from "./ProjectInfo";
 import ProjectDescription from "./ProjectDescription";
+import RelatedProjects from "./RelatedProjects";
 
 const ProjectDetails = ({ project }) => {
   console.log("project info:", {
@@ -17,7 +18,7 @@ const ProjectDetails = ({ project }) => {
 
       <ProjectInfo
         src={project.image}
-        alt={project.name}
+        alt={project.alt}
         projectName={project.name}
         category={project.category}
         client={project.client}
@@ -29,6 +30,13 @@ const ProjectDetails = ({ project }) => {
       <ProjectDescription
         name={project.name}
         description={project.description}
+      />
+      <RelatedProjects
+        src={project.image}
+        alt={project.name}
+        name={project.name}
+        slug={project.slug}
+        description={project.description.slice(0, 95) + "..."}
       />
     </div>
   );

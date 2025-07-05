@@ -3,8 +3,8 @@ import sewing from "@/images/sewing.jpg";
 
 const ProjectDescription = ({ name, description }) => {
   return (
-    <div className="max-w-[85%] mx-auto py-16 px-6">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
+    <div className="max-w-[90%] mx-auto py-16 ">
+      <div className="bg-white p-8 rounded-lg ">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">{name}</h2>
         <p className="text-gray-700 leading-relaxed mb-4">{description}</p>
         <p className="text-gray-700 leading-relaxed mb-4">{description}</p>
