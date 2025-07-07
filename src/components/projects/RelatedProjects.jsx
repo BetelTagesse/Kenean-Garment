@@ -8,7 +8,7 @@ import Link from "next/link";
 const RelatedProjects = ({ name, src, alt, slug, description }) => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <div className="bg-gray-100 py-16 px-6">
+    <div className=" pb-16 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-[#0A1A3A]">
           Related Projects

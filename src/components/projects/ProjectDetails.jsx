@@ -3,6 +3,7 @@ import PageBanner from "./PageBanner";
 import ProjectInfo from "./ProjectInfo";
 import ProjectDescription from "./ProjectDescription";
 import RelatedProjects from "./RelatedProjects";
+import ClientSummary from "./ClientSummary";
 
 const ProjectDetails = ({ project }) => {
   console.log("project info:", {
@@ -31,6 +32,7 @@ const ProjectDetails = ({ project }) => {
         name={project.name}
         description={project.description}
       />
+      <ClientSummary />
       <RelatedProjects
         src={project.image}
         alt={project.name}
