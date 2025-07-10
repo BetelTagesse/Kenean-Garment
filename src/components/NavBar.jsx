@@ -44,20 +44,17 @@ export const NavBar = ({ isMobileOpen }) => {
           <div className="flex gap-4 mr-5">
             <FontAwesomeIcon
               icon={faFacebookF}
-              className="text-green-600 text-2xl"
+              className="text-green text-2xl"
             />
             <FontAwesomeIcon
               icon={faInstagram}
-              className="text-green-600 text-2xl"
+              className="text-green text-2xl"
             />
-            <FontAwesomeIcon
-              icon={faTwitter}
-              className="text-green-600 text-2xl"
-            />
+            <FontAwesomeIcon icon={faTwitter} className="text-green text-2xl" />
             <Link href="https://www.linkedin.com">
               <FontAwesomeIcon
                 icon={faLinkedinIn}
-                className="text-green-600 text-2xl"
+                className="text-green text-2xl"
               />
             </Link>
           </div>

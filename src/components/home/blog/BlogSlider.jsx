@@ -187,7 +187,7 @@ const BlogSlider = () => {
                 </h3>
                 <p className="text-gray-600 mt-2">{blog.excerpt}</p>
                 <Link
-                  href="#"
+                  href={`/blog/${blog.slug}`}
                   className="inline-block font-medium mt-4 text-sm hover:text-green"
                 >
                   READ MORE <span className="text-green px-2"> → </span>

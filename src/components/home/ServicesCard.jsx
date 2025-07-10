@@ -22,7 +22,7 @@ export const ServicesCard = ({
 
       <Link
         href={link}
-        className="text-green-600 font-medium flex items-center gap-2 mb-4"
+        className="text-green font-medium flex items-center gap-2 mb-4"
       >
         READ MORE
         <ArrowRight className="text-green text-2xl" />
