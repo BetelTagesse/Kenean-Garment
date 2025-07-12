@@ -27,7 +27,7 @@ const BlogSinglePage = () => {
     <div className="bg-gray-50 min-h-screen">
       <div className="bg-[#0A1A3A] text-white py-16 px-6 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-2">Blog Details</h1>
-        <p className="text-green-500 text-lg sm:text-xl font-medium">
+        <p className="text-green text-lg sm:text-xl font-medium">
           Home / Blog / Details
         </p>
       </div>
@@ -47,7 +47,7 @@ const BlogSinglePage = () => {
                   <a
                     key={index}
                     href="#"
-                    className="text-gray-600 hover:text-green-600 text-sm"
+                    className="text-gray-600 hover:text-green text-sm"
                   >
                     {tag}
                     {index < blogPostData.tags.length - 1 ? "," : ""}

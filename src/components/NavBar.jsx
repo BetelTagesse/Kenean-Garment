@@ -25,7 +25,7 @@ export const NavBar = ({ isMobileOpen }) => {
   return (
     <>
       {/* Desktop Nav */}
-      <nav className="hidden lg:flex sticky top-0 justify-between px-20 items-center h-20 z-50 bg-white shadow-md">
+      <nav className="hidden lg:flex sticky top-0 justify-between px-20 pl-36 items-center h-20 z-50 bg-white shadow-md">
         <div className="first-half  lg:flex gap-6 ">
           {navItems.map((item, index) => (
             <Link

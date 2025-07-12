@@ -1,6 +1,9 @@
 "use client";
+import First from "@/images/sewing.jpg";
+import Second from "@/images/designer.jpg";
+import Third from "@/images/sewing.jpg";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Search,
   ChevronRight,
@@ -26,7 +29,7 @@ const blogPostData = {
   content: `
     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.</p>
     <p>That is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it is that a more-or-less normal distribution of letter.</p>
-    <blockquote class="border-l-4 border-green-500 pl-4 italic text-gray-600 bg-green-50 p-4 rounded-lg my-6">
+    <blockquote class="border-l-4 border-green pl-4 italic text-gray-600 bg-green-50 p-4 rounded-lg my-6">
       “It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it is that a more-or-less normal distribution.”
       <p class="font-semibold mt-2">- Peter W Willis</p>
     </blockquote>
@@ -37,11 +40,11 @@ const blogPostData = {
       <img src="https://placehold.co/600x400/A3B894/1F2937?text=Content+Image+2" alt="Content Image 2" class="w-full h-auto rounded-lg shadow-md" />
     </div>
     <ul class="list-none space-y-2 mb-6">
-      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green-500 mr-2" /> There are many variations of passages</li>
-      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green-500 mr-2" /> That are many variations of layout</li>
-      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green-500 mr-2" /> Majority are many variations of readable</li>
-      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green-500 mr-2" /> Fact are many variations of content</li>
-      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green-500 mr-2" /> Point are many variations of distracted</li>
+      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green mr-2" /> There are many variations of passages</li>
+      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green mr-2" /> That are many variations of layout</li>
+      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green mr-2" /> Majority are many variations of readable</li>
+      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green mr-2" /> Fact are many variations of content</li>
+      <li class="flex items-center text-gray-700"><ChevronRight size={18} className="text-green mr-2" /> Point are many variations of distracted</li>
     </ul>
     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga</p>
   `,
@@ -58,17 +61,17 @@ const categoriesData = [
 
 const recentPostsData = [
   {
-    image: "https://placehold.co/50x50/cccccc/000000?text=P1",
+    image: First,
     title: "There are many variations available",
     date: "Feb 25, 2023",
   },
   {
-    image: "https://placehold.co/50x50/cccccc/000000?text=P2",
+    image: Second,
     title: "There are many variations available",
     date: "Feb 25, 2023",
   },
   {
-    image: "https://placehold.co/50x50/cccccc/000000?text=P3",
+    image: Third,
     title: "There are many variations available",
     date: "Feb 25, 2023",
   },
@@ -116,7 +119,7 @@ const BlogHeader = ({
   <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
     <div className="relative">
       <img src={mainImage} alt={title} className="w-full h-auto object-cover" />
-      <div className="absolute bottom-4 right-4 bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-md">
+      <div className="absolute bottom-4 right-4 bg-green text-white text-sm font-semibold px-4 py-2 rounded-md">
         {date}
       </div>
     </div>
@@ -146,9 +149,9 @@ const SidebarSearch = () => (
       <input
         type="text"
         placeholder="Search..."
-        className="w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-500 rounded-l-lg"
+        className="w-full p-3 focus:outline-none focus:ring-2 focus:ring-green rounded-l-lg"
       />
-      <button className="bg-green-500 text-white p-3 hover:bg-green-600 transition-colors duration-200 rounded-r-lg">
+      <button className="bg-green text-white p-3 hover:bg-green transition-colors duration-200 rounded-r-lg">
         <Search size={20} />
       </button>
     </div>
@@ -164,11 +167,10 @@ const SidebarCategories = ({ categories }) => (
       {categories.map((cat, index) => (
         <li
           key={index}
-          className="flex justify-between items-center text-gray-700 hover:text-green-600 transition-colors duration-200"
+          className="flex justify-between items-center text-gray-700 hover:text-green transition-colors duration-200"
         >
           <a href="#" className="flex items-center">
-            <ChevronRight size={16} className="mr-2 text-green-500" />{" "}
-            {cat.name}
+            <ChevronRight size={16} className="mr-2 text-green" /> {cat.name}
           </a>
           <span className="text-gray-500">({cat.count})</span>
         </li>
@@ -191,7 +193,7 @@ const SidebarRecentPosts = ({ posts }) => (
             className="w-16 h-16 rounded-lg object-cover flex-shrink-0"
           />
           <div>
-            <h4 className="text-gray-800 font-medium hover:text-green-600 transition-colors duration-200">
+            <h4 className="text-gray-800 font-medium hover:text-green transition-colors duration-200">
               {post.title}
             </h4>
             <p className="text-gray-500 text-sm flex items-center mt-1">
@@ -214,7 +216,7 @@ const SidebarPopularTags = ({ tags }) => (
         <a
           key={index}
           href="#"
-          className="bg-gray-200 text-gray-700 text-sm px-4 py-2 rounded-full hover:bg-green-500 hover:text-white transition-colors duration-200"
+          className="bg-gray-200 text-gray-700 text-sm px-4 py-2 rounded-full hover:bg-green hover:text-white transition-colors duration-200"
         >
           {tag}
         </a>
@@ -251,27 +253,27 @@ const CommentForm = () => (
         <input
           type="text"
           placeholder="Name"
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green"
         />
         <input
           type="email"
           placeholder="Email"
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green"
         />
         <input
           type="text"
           placeholder="Website"
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green"
         />
       </div>
       <textarea
         placeholder="Comment"
         rows="6"
-        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green"
       ></textarea>
       <button
         type="submit"
-        className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200"
+        className="bg-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200"
       >
         POST COMMENT
       </button>
@@ -285,7 +287,7 @@ const BlogSinglePage = () => {
       {/* Page Header (Optional, based on your site's structure) */}
       <div className="bg-[#0A1A3A] text-white py-16 px-6 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-2">Blog Details</h1>
-        <p className="text-green-500 text-lg sm:text-xl font-medium">
+        <p className="text-green text-lg sm:text-xl font-medium">
           Home / Blog / Details
         </p>
       </div>

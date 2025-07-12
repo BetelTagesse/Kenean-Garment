@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 
-const SidebarCategories = ({ categories }) => (
+export const SidebarCategories = ({ categories }) => (
   <div className="bg-white p-6 rounded-lg shadow-md mb-8">
     <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-3">
       Categories
@@ -21,5 +21,3 @@ const SidebarCategories = ({ categories }) => (
     </ul>
   </div>
 );
-
-export default SidebarCategories;

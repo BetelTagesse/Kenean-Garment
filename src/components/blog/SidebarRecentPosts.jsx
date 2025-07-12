@@ -1,6 +1,6 @@
 import { Calendar } from "lucide-react";
 
-const SidebarRecentPosts = ({ posts }) => (
+export const SidebarRecentPosts = ({ posts }) => (
   <div className="bg-white p-6 rounded-lg shadow-md mb-8">
     <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-3">
       Recent Posts
@@ -26,5 +26,3 @@ const SidebarRecentPosts = ({ posts }) => (
     </div>
   </div>
 );
-
-export default SidebarRecentPosts;

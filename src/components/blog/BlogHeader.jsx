@@ -1,6 +1,6 @@
 import { Tag, User, MessageSquare } from "lucide-react";
 
-const BlogHeader = ({
+export const BlogHeader = ({
   title,
   date,
   category,
@@ -11,7 +11,7 @@ const BlogHeader = ({
   <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
     <div className="relative">
       <img src={mainImage} alt={title} className="w-full h-auto object-cover" />
-      <div className="absolute bottom-4 right-4 bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-md">
+      <div className="absolute bottom-4 right-4 bg-green text-white text-sm font-semibold px-4 py-2 rounded-md">
         {date}
       </div>
     </div>
@@ -31,5 +31,3 @@ const BlogHeader = ({
     </div>
   </div>
 );
-
-export default BlogHeader;
