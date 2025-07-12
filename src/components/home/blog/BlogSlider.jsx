@@ -1,149 +1,11 @@
-// "use client";
-// import { useRef } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import BlogCard from "./BlogCard";
-
-// export default function BlogSlider() {
-//   const swiperRef = useRef(null);
-
-// const blogData = [
-//   {
-//     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-//     date: "Feb 25, 2025",
-//     comments: "20",
-//     category: "Business",
-//     title: "There Are Many Variations Of Passages Available",
-//     excerpt:
-//       "It is a long established fact that a reader will be distracted by the...",
-//   },
-//   {
-//     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-//     date: "Feb 25, 2025",
-//     comments: "20",
-//     category: "Daily Textile",
-//     title: "There Are Many Variations Of Passages Available",
-//     excerpt:
-//       "It is a long established fact that a reader will be distracted by the...",
-//   },
-//   {
-//     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-//     date: "Feb 25, 2025",
-//     comments: "20",
-//     category: "Lifestyle",
-//     title: "There Are Many Variations Of Passages Available",
-//     excerpt:
-//       "It is a long established fact that a reader will be distracted by the...",
-//   },
-//   {
-//     image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-//     date: "Feb 25, 2025",
-//     comments: "20",
-//     category: "Textile",
-//     title: "Passages Available In The Factory",
-//     excerpt:
-//       "It is a long established fact that a reader will be distracted by the...",
-//   },
-// ];
-
-//   return (
-//     <div className="bg-gray-400 py-10 px-4">
-//       <Swiper
-//         // spaceBetween={20}
-//         // slidesPerView={1}
-//         // breakpoints={{
-//         //   640: { slidesPerView: 1 },
-//         //   768: { slidesPerView: 2 },
-//         //   1024: { slidesPerView: 3 },
-//         // }}
-//         loop={true}
-//         autoplay={{ delay: 3000 }}
-//         onSwiper={(swiper) => (swiperRef.current = swiper)}
-//       >
-//         {blogData.map((blog, index) => (
-//           <SwiperSlide key={index}>
-//             <BlogCard {...blog} />
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-//     </div>
-//   );
-// }
-
-// components/ImageSlider.jsx
-
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Link from "next/link";
-
-const blogData = [
-  {
-    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2025",
-    comments: "20",
-    category: "Business",
-    title: "There Are Many Variations Of Passages Available",
-    excerpt:
-      "It is a long established fact that a reader will be distracted by the...",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2025",
-    comments: "20",
-    category: "Daily Textile",
-    title: "There Are Many Variations Of Passages Available",
-    excerpt:
-      "It is a long established fact that a reader will be distracted by the...",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2025",
-    comments: "20",
-    category: "Lifestyle",
-    title: "There Are Many Variations Of Passages Available",
-    excerpt:
-      "It is a long established fact that a reader will be distracted by the...",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2025",
-    comments: "20",
-    category: "Textile",
-    title: "Passages Available In The Factory are variable",
-    excerpt:
-      "It is a long established fact that a reader will be distracted by the...",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2025",
-    comments: "20",
-    category: "Daily Textile",
-    title: "There Are Many Variations Of Passages Available",
-    excerpt:
-      "It is a long established fact that a reader will be distracted by the...",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2025",
-    comments: "20",
-    category: "Lifestyle",
-    title: "There Are Many Variations Of Passages Available",
-    excerpt:
-      "It is a long established fact that a reader will be distracted by the...",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    date: "Feb 25, 2025",
-    comments: "20",
-    category: "Textile",
-    title: "Passages Available In The Factory are variable",
-    excerpt:
-      "It is a long established fact that a reader will be distracted by the...",
-  },
-];
+import { blogData } from "@/components/blog/blogData";
+import Image from "next/image";
 
 const BlogSlider = () => {
   return (
@@ -167,7 +29,7 @@ const BlogSlider = () => {
           <SwiperSlide key={index}>
             <div className="  rounded-xl  overflow-hidden hover:scale-105 transition-transform duration-700  ">
               <div className="overflow-hidden rounded-xl shadow-lg ">
-                <img
+                <Image
                   src={blog.image}
                   alt={`Garment ${index + 1}`}
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
