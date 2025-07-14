@@ -1,17 +1,16 @@
+"use client";
+
 const SidebarPopularTags = ({ tags }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md mb-8">
-    <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-3">
-      Popular Tags
-    </h3>
+  <div className="bg-white p-6 rounded-lg shadow">
+    <h3 className="text-xl font-semibold mb-4 border-b pb-2">Popular Tags</h3>
     <div className="flex flex-wrap gap-2">
-      {tags.map((tag, index) => (
-        <a
-          key={index}
-          href="#"
-          className="bg-gray-200 text-gray-700 text-sm px-4 py-2 rounded-full hover:bg-green-500 hover:text-white transition-colors duration-200"
+      {tags.map((tag, idx) => (
+        <span
+          key={idx}
+          className="text-sm px-3 py-1 bg-gray-200 rounded-full hover:bg-green hover:text-white transition"
         >
           {tag}
-        </a>
+        </span>
       ))}
     </div>
   </div>

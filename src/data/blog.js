@@ -24,4 +24,18 @@ export const blogs = [
     date: "June 10, 2025",
     image: sewing,
   },
+  {
+    title: "Choosing the Right Fabric",
+    excerpt: "Understand fabric types and their ideal applications in design.",
+    slug: "choosing-fabric",
+    date: "June 10, 2025",
+    image: sewing,
+  },
+  {
+    title: "Choosing the Right Fabric",
+    excerpt: "Understand fabric types and their ideal applications in design.",
+    slug: "choosing-fabric",
+    date: "June 10, 2025",
+    image: sewing,
+  },
 ];

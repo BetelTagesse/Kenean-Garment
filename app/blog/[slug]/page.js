@@ -1,6 +1,6 @@
 // app/blog/[slug]/page.jsx
 import BlogSinglePage from "@/components/blog/BlogCard";
-import { blogData } from "@/components/blog/blogData.js";
+import { blogData } from "@/components/blog/blogPostData.js";
 import Image from "next/image";
 
 export default function BlogDetails({ params }) {
@@ -8,5 +8,5 @@ export default function BlogDetails({ params }) {
 
   if (!blog) return <div className="text-center py-20">Post not found</div>;
 
-  return <BlogSinglePage />;
+  return <BlogSinglePage blog={blog} />;
 }

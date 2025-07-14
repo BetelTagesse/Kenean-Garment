@@ -1,22 +1,20 @@
+"use client";
+
+import Image from "next/image";
 import { Tag, User, MessageSquare } from "lucide-react";
 
-export const BlogHeader = ({
+const BlogHeader = ({
   title,
+  mainImage,
   date,
   category,
   author,
   commentsCount,
-  mainImage,
 }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-    <div className="relative">
-      <img src={mainImage} alt={title} className="w-full h-auto object-cover" />
-      <div className="absolute bottom-4 right-4 bg-green text-white text-sm font-semibold px-4 py-2 rounded-md">
-        {date}
-      </div>
-    </div>
+    <Image src={mainImage} alt={title} className="w-full h-auto object-cover" />
     <div className="p-6">
-      <div className="flex items-center text-gray-500 text-sm mb-4 space-x-4">
+      <div className="flex items-center text-sm text-gray-500 space-x-4 mb-3">
         <span className="flex items-center">
           <Tag size={16} className="mr-1" /> {category}
         </span>
@@ -28,6 +26,9 @@ export const BlogHeader = ({
         </span>
       </div>
       <h1 className="text-3xl font-bold text-gray-800">{title}</h1>
+      <p className="text-sm text-gray-400 mt-2">📅 {date}</p>
     </div>
   </div>
 );
+
+export default BlogHeader;

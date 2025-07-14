@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { blogData } from "@/components/blog/blogData.js";
+import { blogData } from "@/components/blog/blogPostData.js";
 import Image from "next/image";
 import BlogSinglePage from "@/components/blog/BlogCard";
 

@@ -11,6 +11,7 @@ import { NavBar } from "@/components/NavBar";
 import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
 import HeaderWrapper from "@/components/HeaderWrapper";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata = {
   title: "Canaan Garment",
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
 
       <body>
         <HeaderWrapper />
-
+        <ScrollToTop />
         {children}
         <Footer />
       </body>

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Link from "next/link";
-import { blogData } from "@/components/blog/blogData";
+import { blogs } from "@/data/blog.js";
 import Image from "next/image";
 
 const BlogSlider = () => {
@@ -25,7 +25,7 @@ const BlogSlider = () => {
           1024: { slidesPerView: 3 },
         }}
       >
-        {blogData.map((blog, index) => (
+        {blogs.map((blog, index) => (
           <SwiperSlide key={index}>
             <div className="  rounded-xl  overflow-hidden hover:scale-105 transition-transform duration-700  ">
               <div className="overflow-hidden rounded-xl shadow-lg ">

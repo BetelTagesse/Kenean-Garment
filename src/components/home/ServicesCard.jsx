@@ -18,7 +18,7 @@ export const ServicesCard = ({
 
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
 
-      <p className="text-gray-600 mb-4 w-1/2 md:w-2/3">{description}</p>
+      <p className="text-gray-600 mb-4   w-2/3">{description}</p>
 
       <Link
         href={link}
