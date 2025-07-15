@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import logo from "../images/cola.png";
+import logo from "@/images/logo.jpg";
 import phone from "../public/phone.svg";
 import "../../app/globals.css";
 

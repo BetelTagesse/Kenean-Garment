@@ -16,6 +16,9 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata = {
   title: "Canaan Garment",
   description: "A garment company website by create next app",
+  icons: {
+    icon: "./favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
