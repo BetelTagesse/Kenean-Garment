@@ -9,7 +9,7 @@ const RecentWorks = () => {
   return (
     <div className="bg-purple w-full mt-40 py-15">
       <FirstSection />
-      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-10 w-11/12 mt-25 mx-auto pb-20">
+      <div className="grid grid-cols-1 justify-items-center md:grid-cols-2  lg:grid-cols-4 gap-10 w-11/12 mt-25 mx-auto pb-20">
         <SingleWork src={First} alt="Chiffon Fabric" name="chiffon fabric" />
         <SingleWork src={Second} alt="cotton fabric" name="cotton fabric" />
         <SingleWork src={Third} alt="crepe fabric" name="crepe fabric" />
