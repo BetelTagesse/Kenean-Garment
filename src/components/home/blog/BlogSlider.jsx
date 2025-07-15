@@ -20,7 +20,7 @@ const BlogSlider = () => {
         }}
         breakpoints={{
           0: {
-            slidesPerView: 0,
+            slidesPerView: 1,
           },
           640: {
             slidesPerView: 1,
