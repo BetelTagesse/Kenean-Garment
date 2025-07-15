@@ -13,7 +13,7 @@ import { SlidingImage } from "@/components/home/sliding_image.jsx";
 import StatisticsSection from "@/components/home/statistics/StatisticsSection";
 import { WhoWeAre } from "@/components/home/WhoWeAre";
 import TestIconPage from "@/components/TestIcon";
-import { Button } from "@/shared/button";
+import { Button } from "@/shared/Button";
 
 export default function Home() {
   return (
