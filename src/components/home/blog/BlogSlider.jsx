@@ -6,6 +6,7 @@ import "swiper/css";
 import Link from "next/link";
 import Image from "next/image";
 import { blogs } from "@/data/blog.js";
+import { blogData } from "@/components/blog/blogPostData";
 
 const BlogSlider = () => {
   return (
@@ -36,12 +37,12 @@ const BlogSlider = () => {
           },
         }}
       >
-        {blogs.map((blog, index) => (
+        {blogData.map((blog, index) => (
           <SwiperSlide key={index}>
-            <div className="  rounded-xl overflow-hidden hover:scale-105 transition-transform duration-700">
+            <div className="rounded-xl overflow-hidden hover:scale-105 transition-transform duration-700">
               <div className="overflow-hidden rounded-xl shadow-lg">
                 <Image
-                  src={blog.image}
+                  src={blog.mainImage}
                   alt={`Blog image ${index + 1}`}
                   width={600}
                   height={320}
@@ -59,7 +60,7 @@ const BlogSlider = () => {
                   <span>📁 {blog.category}</span>
                 </div>
                 <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-green">
-                  {blog.title}
+                  {blog.titleOne}
                 </h3>
                 <p className="text-gray-600 mt-2">{blog.excerpt}</p>
                 <Link

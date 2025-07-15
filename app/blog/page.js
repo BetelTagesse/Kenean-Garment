@@ -1,12 +1,10 @@
-import Link from "next/link";
-import { blogData } from "@/components/blog/blogPostData.js";
-import Image from "next/image";
-import BlogSinglePage from "@/components/blog/BlogCard";
+import BlogPage from "@/components/blog/BlogPage";
+import { blogData } from "@/components/blog/blogPostData";
 
-export default function BlogPage() {
-  return (
-    <>
-      <BlogSinglePage />
-    </>
-  );
+export default function page({ params }) {
+  const blog = blogData.find((b) => b.slug === params.slug);
+
+  if (!blog) return <div className="text-center py-20">Post not found</div>;
+
+  return <BlogPage slug={params.slug} />;
 }

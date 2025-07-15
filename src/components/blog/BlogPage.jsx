@@ -4,8 +4,6 @@ import Image from "next/image";
 import First from "@/images/sewing.jpg";
 import Second from "@/images/designer.jpg";
 import Third from "@/images/sewing.jpg";
-import sewingImg from "@/images/sewing.jpg";
-import designerImg from "@/images/designer.jpg";
 import {
   Search,
   ChevronRight,
@@ -39,9 +37,8 @@ const blogPostData = {
     <h3 class="text-2xl font-bold text-gray-800 mb-4">Sed ut perspiciatis unde omnis iste natus erro</h3>
     <p>But I must explain to you how all this mistaken idea of denouncing pleasure...</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-      <img src="${designerImg.src}" alt="Content Image 1" class="w-full h-auto rounded-lg shadow-md" />
-        <img src="${sewingImg.src}" 
- alt="Content Image 2" class="w-full h-auto rounded-lg shadow-md" />
+      <img src="/images/sewing.jpg" alt="Content Image 1" class="w-full h-auto rounded-lg shadow-md" />
+      <img src="/images/designer.jpg" alt="Content Image 2" class="w-full h-auto rounded-lg shadow-md" />
     </div>
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
       <li>There are many variations of passages</li>
@@ -251,14 +248,19 @@ const CommentForm = () => (
   </div>
 );
 
-export default function BlogSinglePage({ slug }) {
+export default function BlogPage({ slug }) {
   const blog = blogData.find((b) => b.slug === slug);
   if (!blog) return <div className="text-center py-20">Post not found</div>;
   return (
     <div className="bg-gray-50">
-      <div className="bg-[#0A1A3A] text-white py-14 text-center">
-        <h1 className="text-4xl font-bold">Blog Details</h1>
-        <p className="text-green mt-2"> Blog / {blog.slug}</p>
+      <div
+        className="relative bg-cover bg-center text-white py-24 text-center"
+        style={{
+          backgroundImage: `url(${First.src})`,
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50 z-0"></div>{" "}
+        <h3 className="text-4xl font-bold relative z-10">Blogs.{blog.slug} </h3>
       </div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 py-16 px-4">
