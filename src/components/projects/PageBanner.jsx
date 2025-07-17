@@ -12,9 +12,10 @@ const PageBanner = ({ title, backgroundImage }) => {
         className="object-cover opacity-60"
         priority
       />
+      <div className="absolute inset-0 bg-[#0a1a3a]/70 z-10"></div>
 
       {/* Overlay content */}
-      <div className="relative z-10">
+      <div className="relative z-10 ">
         <h1 className="text-4xl font-bold">{title}</h1>
         <div className="mt-2 text-sm space-x-2">
           <Link href="/projects" className="hover:underline text-white">
