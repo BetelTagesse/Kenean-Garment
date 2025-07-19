@@ -16,6 +16,9 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata = {
   title: "Canaan Garment",
   description: "A garment company website by create next app",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -26,6 +29,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <body>

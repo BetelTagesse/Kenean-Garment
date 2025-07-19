@@ -10,14 +10,16 @@ import {
   ArrowUp,
   MessageCircle,
 } from "lucide-react";
-
+import Image from "next/image";
+import logoImage from "@/images/logo.jpg";
 const FirstSection = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-between items-center py-6 border-b border-gray-700 mb-8">
         {/* Logo */}
-        <div className="text-3xl font-bold flex items-center mb-6 md:mb-0">
-          <span className="text-green">△</span> TEXTILE
+        <div className="text-3xl font-bold flex items-center mb-6  gap-1.5 md:mb-0">
+          <Image src={logoImage} alt="logo" width={20} />
+          TEXTILE
         </div>
 
         {/* Social Media Icons */}

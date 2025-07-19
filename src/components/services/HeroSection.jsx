@@ -2,7 +2,7 @@
 import Image from "next/image";
 import BgImage from "@/images/sewing.jpg";
 
-import {  Play } from "lucide-react";
+import { Play } from "lucide-react";
 import Link from "next/link";
 
 const HeroSection = () => {

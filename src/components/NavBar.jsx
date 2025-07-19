@@ -16,7 +16,17 @@ export const NavBar = ({ isMobileOpen }) => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Services", href: "/services" },
+    {
+      label: "Services",
+      submenu: [
+        { label: "Fabric Development", href: "/services" },
+        { label: "Digital Fabric Printing", href: "/services" },
+        { label: "Fabric Dyeing", href: "/services" },
+        { label: "Quality Engineering", href: "/services" },
+        { label: "Fabric Finishing", href: "/services" },
+      ],
+      href: "/services",
+    },
     { label: "Projects", href: "/projects" },
     { label: "Blog", href: "/blog" },
     { label: "Contact Us", href: "/contact" },
@@ -28,15 +38,35 @@ export const NavBar = ({ isMobileOpen }) => {
       <nav className="hidden lg:flex sticky top-0 justify-between px-20 pl-36 items-center h-20 z-50 bg-white shadow-md">
         <div className="first-half  lg:flex gap-6 ">
           {navItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href}
-              className={`text-xl ${
-                pathname === item.href ? "text-green" : "text-gray-800"
-              }`}
-            >
-              {item.label}
-            </Link>
+            <div key={index} className="relative group">
+              <Link
+                href={item.href}
+                className={`text-xl px-4 py-2 ${
+                  pathname === item.href ? "text-green" : "text-gray-800"
+                }`}
+              >
+                {item.label}
+              </Link>
+
+              {/* Dropdown for submenu */}
+              {item.submenu && (
+                <div className="absolute left-0 pt-4 w-56 h-fit bg-white  items-stretch shadow-lg rounded-md hidden group-hover:block z-50">
+                  {item.submenu.map((sub, subIndex) => (
+                    <div>
+                      <Link
+                        key={subIndex}
+                        href={sub.href}
+                        className="group flex items-center px-4 py-2 text-gray-700 hover:text-green transition-all duration-200"
+                      >
+                        {sub.label}
+                      </Link>
+
+                      <hr className="text-gray-300" />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
 
