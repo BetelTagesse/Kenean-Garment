@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/faviconn.ico" />
       </Head>
 
       <body>

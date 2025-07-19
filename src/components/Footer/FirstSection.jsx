@@ -19,7 +19,7 @@ const FirstSection = () => {
         {/* Logo */}
         <div className="text-3xl font-bold flex items-center mb-6  gap-1.5 md:mb-0">
           <Image src={logoImage} alt="logo" width={20} />
-          TEXTILE
+          KENEAN
         </div>
 
         {/* Social Media Icons */}

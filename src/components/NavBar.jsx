@@ -52,17 +52,16 @@ export const NavBar = ({ isMobileOpen }) => {
               {item.submenu && (
                 <div className="absolute left-0 pt-4 w-56 h-fit bg-white  items-stretch shadow-lg rounded-md hidden group-hover:block z-50">
                   {item.submenu.map((sub, subIndex) => (
-                    <div>
-                      <Link
-                        key={subIndex}
-                        href={sub.href}
-                        className="group flex items-center px-4 py-2 text-gray-700 hover:text-green transition-all duration-200"
-                      >
-                        {sub.label}
-                      </Link>
-
+                    <Link
+                      key={subIndex}
+                      href={sub.href}
+                      className="group flex items-center px-4 py-2 text-gray-700 hover:text-green transition-all duration-200"
+                    >
+                      {sub.label}
                       <hr className="text-gray-300" />
-                    </div>
+                    </Link>
+
+                    // <hr className="text-gray-300" />
                   ))}
                 </div>
               )}
