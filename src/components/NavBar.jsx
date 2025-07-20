@@ -35,13 +35,13 @@ export const NavBar = ({ isMobileOpen }) => {
   return (
     <>
       {/* Desktop Nav */}
-      <nav className="hidden lg:flex sticky top-0 justify-between px-20 pl-36 items-center h-20 z-50 bg-white shadow-md">
+      <nav className="hidden lg:flex sticky top-0 justify-between px-48  items-center h-20 z-50 bg-white shadow-md">
         <div className="first-half  lg:flex gap-6 ">
           {navItems.map((item, index) => (
             <div key={index} className="relative group">
               <Link
                 href={item.href}
-                className={`text-xl px-4 py-2 ${
+                className={`text-xl  py-2 ${
                   pathname === item.href ? "text-green" : "text-gray-800"
                 }`}
               >
@@ -50,18 +50,18 @@ export const NavBar = ({ isMobileOpen }) => {
 
               {/* Dropdown for submenu */}
               {item.submenu && (
-                <div className="absolute left-0 pt-4 w-56 h-fit bg-white  items-stretch shadow-lg rounded-md hidden group-hover:block z-50">
+                <div className="absolute left-0 pt-8 w-56 h-80 bg-white  items-stretch rounded-md hidden group-hover:block z-50 shadow-2xl">
                   {item.submenu.map((sub, subIndex) => (
-                    <Link
-                      key={subIndex}
-                      href={sub.href}
-                      className="group flex items-center px-4 py-2 text-gray-700 hover:text-green transition-all duration-200"
-                    >
-                      {sub.label}
-                      <hr className="text-gray-300" />
-                    </Link>
+                    <div key={subIndex}>
+                      <Link
+                        href={sub.href}
+                        className="group flex items-center px-4 py-4 text-gray-700 hover:text-green transition-all duration-200"
+                      >
+                        {sub.label}
+                      </Link>
 
-                    // <hr className="text-gray-300" />
+                      <hr className="text-gray-300" />
+                    </div>
                   ))}
                 </div>
               )}
@@ -69,7 +69,7 @@ export const NavBar = ({ isMobileOpen }) => {
           ))}
         </div>
 
-        <div className="flex items-center">
+        <div className="flex items-center mr-28">
           <div className="flex gap-4 mr-5">
             <FontAwesomeIcon
               icon={faFacebookF}
@@ -87,15 +87,26 @@ export const NavBar = ({ isMobileOpen }) => {
               />
             </Link>
           </div>
-          <Button className="bg-blue-950 text-white text-bold px-10 py-2 border-amber-50 rounded-full hover:cursor-pointer">
-            GET QUOTE
-          </Button>
+          <div className="absolute right-20  top-1/2 transform -translate-y-1/2 z-30">
+            <Link
+              href="/contact"
+              className="relative inline-block overflow-hidden bg-green text-white  py-3 px-6 rounded-full text-sm shadow group"
+            >
+              {/* Animated purple background */}
+              <span className="absolute inset-0 bg-purple w-0 group-hover:w-full transition-all duration-500 ease-out left-0 top-0 z-0 origin-left"></span>
+
+              {/* Link text stays on top */}
+              <span className="relative z-10 px-8  text-xl group-hover:text-white transition-colors duration-300 capitalize">
+                Get Quote
+              </span>
+            </Link>
+          </div>
         </div>
       </nav>
 
       {/* Mobile Nav */}
       {isMobileOpen && (
-        <div className="lg:hidden h-73 bg-white border-t-4 border-t-green shadow-md flex flex-col  px-6  space-y-3 z-50">
+        <div className="md:hidden h-73 bg-white border-t-4 border-t-green shadow-md flex flex-col  px-6  space-y-3 z-50">
           {navItems.map((item, index) => (
             <div key={index} className="w-full border-t border-gray-300 pt-2.5">
               <Link
@@ -106,7 +117,6 @@ export const NavBar = ({ isMobileOpen }) => {
               </Link>
             </div>
           ))}
-
           <div className=" hidden lg:flex gap-4 mt-4">
             <FontAwesomeIcon
               icon={faFacebookF}
@@ -127,10 +137,6 @@ export const NavBar = ({ isMobileOpen }) => {
               />
             </Link>
           </div>
-
-          <Button className=" hidden lg:block mt-4 bg-blue-950 text-white font-bold px-6 py-2 rounded-full">
-            GET QUOTE
-          </Button>
         </div>
       )}
     </>

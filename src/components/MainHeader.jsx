@@ -14,7 +14,7 @@ const MainHeader = ({ isMobileOpen, setIsMobileOpen }) => {
       {/* Logo */}
       <div className="flex space-x-3 items-center">
         <Image src={logo} width={30} height={30} alt="company logo" priority />
-        <h1 className="font-bold text-2xl text-white">Canaan</h1>
+        <h1 className="font-bold text-2xl text-white">KENEAN</h1>
       </div>
 
       {/* Desktop */}
@@ -23,8 +23,8 @@ const MainHeader = ({ isMobileOpen, setIsMobileOpen }) => {
           <FontAwesomeIcon icon={faEnvelope} className="text-green text-4xl " />
           <div className="flex flex-col">
             <p className="text-tiny">Send Email</p>
-            <Link href="/contact" className="text-tiny-bold">
-              info@domain.com
+            <Link href="mailto:muler2011@gmail.com" className="text-tiny-bold">
+              muler@domain.com
             </Link>
           </div>
           <div className="w-px bg-gray-500 h-10  mx-4"></div>

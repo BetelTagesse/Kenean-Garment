@@ -46,29 +46,6 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      {/* Green Box with Play Button */}
-
-      <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 z-30 w-[85%] max-w-4xl bg-[#5BA600] text-white p-6 rounded-t-xl flex justify-between items-center shadow-xl">
-        <div className="text-lg md:text-xl font-bold">
-          The Best Textile Solutions For Your Business.
-        </div>
-
-        {/* Animated Play Button */}
-        <Link
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative group"
-        >
-          {/* Outer animation pulse */}
-          <span className="absolute inset-0 rounded-full animate-ping bg-white/30 group-hover:scale-110 transition-transform duration-300"></span>
-
-          {/* Actual button */}
-          <span className="relative z-10 w-14 h-14 rounded-full bg-white  transition flex items-center justify-center">
-            <Play className="fill-green  w-8 h-8 " />
-          </span>
-        </Link>
-      </div>
     </section>
   );
 };
