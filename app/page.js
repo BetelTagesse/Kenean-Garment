@@ -14,6 +14,7 @@ import StatisticsSection from "@/components/home/statistics/StatisticsSection";
 import { WhoWeAre } from "@/components/home/WhoWeAre";
 import TestIconPage from "@/components/TestIcon";
 import { Button } from "@/shared/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,9 +27,21 @@ export default function Home() {
           <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold text-gray-200 mb-6">
             Get Quality Fabric For <br /> Your Business
           </h2>
-          <Button className="bg-green  font-bold px-8 py-2 hover:from-blue-900 hover:to-blue-950">
-            LEARN MORE
-          </Button>
+          <Link
+            href="/about"
+            className="relative inline-block overflow-hidden bg-green text-white  py-3 px-6 rounded-full  shadow group"
+          >
+            {/* Animated purple background */}
+            <span className="absolute inset-0 bg-purple w-0 group-hover:w-full transition-all duration-500 ease-out left-0 top-0 z-0 origin-left"></span>
+
+            {/* Link text stays on top */}
+
+            <span
+              className={`relative z-10 px-8   group-hover:text-white transition-colors duration-300 capitalize ${className}`}
+            >
+              {children}
+            </span>
+          </Link>
         </div>
       </SlidingImage>
       <ServicesSection />

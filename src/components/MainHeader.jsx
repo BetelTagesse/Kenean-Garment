@@ -12,10 +12,10 @@ const MainHeader = ({ isMobileOpen, setIsMobileOpen }) => {
   return (
     <div className="main-header text-sm py-4 px-10 bg-purple shadow flex justify-between lg:justify-around items-center relative">
       {/* Logo */}
-      <div className="flex space-x-3 items-center">
+      <Link href="/" className="flex space-x-3 items-center">
         <Image src={logo} width={30} height={30} alt="company logo" priority />
         <h1 className="font-bold text-2xl text-white">KENEAN</h1>
-      </div>
+      </Link>
 
       {/* Desktop */}
       <div className="hidden lg:flex space-x-10 items-center">

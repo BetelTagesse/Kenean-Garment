@@ -43,7 +43,7 @@ export const WhoWeAre = () => {
           <FontAwesomeIcon icon={faCheck} className="text-green text-2xl  " />
           <p>Natus error sit voluptatem accusantium</p>
         </div>
-        <Button className=" mt-12 bg-green  font-bold px-8 py-2 hover:from-blue-900 hover:to-blue-950">
+        <Button className=" mt-12 bg-purple  font-bold px-8 py-2 hover:from-blue-900 hover:to-blue-950">
           LEARN MORE
         </Button>
       </div>
