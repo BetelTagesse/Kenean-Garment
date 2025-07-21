@@ -50,7 +50,7 @@ const SingleProject = ({ src, alt, name, slug }) => {
           onClick={() => setShowModal(false)}
         >
           <div
-            className="relative w-11/12 md:w-3/4 lg:w-1/2"
+            className=" w-11/12 md:w-3/4 lg:w-1/2"
             onClick={(e) => e.stopPropagation()}
           >
             <Image

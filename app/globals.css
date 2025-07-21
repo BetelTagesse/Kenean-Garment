@@ -9,7 +9,6 @@
     @apply text-white text-5xl font-extrabold uppercase;
   }
 }
-
 @layer components {
   .main-header {
     @apply bg-purple text-white py-2 px-4;

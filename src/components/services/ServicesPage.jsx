@@ -11,7 +11,7 @@ import Testimonials from "./Testimonials";
 const ServicesPage = () => {
   return (
     <>
-      <div className="min-h-screen bg-gray-50 ">
+      <div className="min-h-screen bg-[#f1f0ee] ">
         <PageBanner />
         <ServicesListTwo />
         <HeroSection />

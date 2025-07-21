@@ -15,7 +15,7 @@ const StatisticsSection = ({
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10 text-center justify-items-center">
           <StatisticsSingle
             MyIcon={Users2}
-            counter="1000"
+            counter="500"
             description="Satisfied Clients"
             iconColor={iconColor}
             textColor={textColor}
@@ -29,14 +29,14 @@ const StatisticsSection = ({
           />
           <StatisticsSingle
             MyIcon={CalendarCheck}
-            counter="25"
+            counter="7"
             description="Experience"
             iconColor={iconColor}
             textColor={textColor}
           />
           <StatisticsSingle
             MyIcon={Award}
-            counter="40"
+            counter="10"
             description="Win Awards"
             iconColor={iconColor}
             textColor={textColor}
