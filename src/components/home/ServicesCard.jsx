@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Globe, Layers, Cpu } from "lucide-react";
 
 export const ServicesCard = ({
   MyIcon,
@@ -14,7 +13,7 @@ export const ServicesCard = ({
       className={`w-1/2   flex flex-col items-center justify-center text-center  p-1 md:p-3 lg:p-6 group ${className}`}
     >
       {/* MyIcon that rotates once on hover */}
-      <MyIcon className="w-16 h-16 text-green mb-4 animate-rotate-once" />
+      <MyIcon className="w-16 h-16 text-green mb-6 animate-rotate-once" />
 
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
 

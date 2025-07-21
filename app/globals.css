@@ -18,10 +18,12 @@
 @layer utilities {
   .animate-rotate-once {
     transition: transform 0.9s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
   }
 
   .group:hover .animate-rotate-once {
-    transform: rotate(-360deg);
+    transform: rotateY(360deg);
   }
 
   /* Create triangle cutout on the left */

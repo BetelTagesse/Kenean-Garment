@@ -1,4 +1,4 @@
-import { Globe, Layers, Cpu } from "lucide-react";
+import { NotepadTextDashed, Scissors, Globe, Globe2Icon } from "lucide-react";
 import { ServicesCard } from "./ServicesCard";
 
 export const ServicesSection = () => {
@@ -9,22 +9,22 @@ export const ServicesSection = () => {
     relative z-10  shadow-2xl -translate-y-40 py-10"
     >
       <ServicesCard
-        MyIcon={Globe}
+        MyIcon={NotepadTextDashed}
         title="Fabric Development"
-        description="There are many variations of passages of lorem ipsum available."
-        link="/fabric-development"
+        description="We help businesses create custom fabric solutions tailored to their product needs."
+        link="/projects"
       />
       <ServicesCard
-        MyIcon={Layers}
+        MyIcon={Scissors}
         title="Design & Patterning"
         description="Helping you go from concept to production with precision."
-        link="/design-patterning"
+        link="/projects"
       />
       <ServicesCard
-        MyIcon={Cpu}
+        MyIcon={Globe2Icon}
         title="Tech Integration"
         description="Smart manufacturing with real-time tracking and automation."
-        link="/tech-integration"
+        link="/projects"
       />
     </div>
   );

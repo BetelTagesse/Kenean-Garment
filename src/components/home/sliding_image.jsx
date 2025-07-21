@@ -2,15 +2,19 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import cola from "../../images/cola.png";
-import burger from "../../images/bbq_burger.png";
-import designer from "../../images/designer.jpg";
+import image1 from "@/images/image1.jpg";
+import image2 from "@/images/image2.jpg";
+import image3 from "@/images/image3.jpg";
+import image4 from "@/images/image4.jpg";
+import image5 from "@/images/image5.jpg";
 
 export const SlidingImage = ({ children }) => {
   const images = [
-    { src: cola.src, alt: "image 1" },
-    { src: burger.src, alt: "image 2" },
-    { src: designer.src, alt: "image 3" },
+    { src: image1.src, alt: "image 1" },
+    { src: image2.src, alt: "image 2" },
+    { src: image3.src, alt: "image 3" },
+    { src: image4.src, alt: "image 4" },
+    { src: image5.src, alt: "image 5" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,10 +43,11 @@ export const SlidingImage = ({ children }) => {
         className="absolute inset-0 bg-center bg-cover  brightness-50"
         style={{
           backgroundImage: `url(${images[currentIndex].src})`,
-          backgroundColor: "rgb(85, 92, 99)",
+          // backgroundColor: "rgb(85, 92, 99)",
           objectFit: "cover",
         }}
       />
+      <div className="absolute inset-0 bg-[#0a1a3a]/50"></div>
 
       {/* Forward Button */}
       <button
@@ -55,7 +60,7 @@ export const SlidingImage = ({ children }) => {
       </button>
 
       {/* Content */}
-      <div className="relative flex flex-col justify-center items-start h-full text-white p-20">
+      <div className="relative flex flex-col justify-center items-start h-full text-white font-bold p-20">
         {children}
       </div>
     </div>

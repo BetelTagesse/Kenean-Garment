@@ -18,7 +18,7 @@ export const WhoWeAre = () => {
       </div>
 
       {/* Text Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-start px-3 py-10 max-w-xl">
+      <div className="w-full md:w-1/2 flex flex-col justify-start px-3 pt-3 max-w-xl">
         <p className="text-green pb-4 font-bold"> WHO WE ARE</p>
         <p className="text-gray-900 text-3xl md:text-4xl capitalize leading-snug">
           The Best Textile <span className="text-green">Company</span> In{" "}
@@ -26,26 +26,26 @@ export const WhoWeAre = () => {
           The Country.
         </p>
 
-        <p className="pt-6 text-sm md:text-base">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
+        <p className="pt-6 text-sm md:text-base text-gray-600 leading-relaxed">
+          We specialize in delivering high-quality fabrics with precision and
+          care. Our expert team ensures every thread meets the highest industry
+          standards for performance and sustainability.
         </p>
-        <div className="flex pt-6 gap-5 items-center">
-          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl  " />
-          <p> Sed ut perspiciatis unde omnis</p>
+
+        <div className="flex pt-6 gap-5 items-center text-gray-600 text-base leading-relaxed">
+          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl" />
+          <p> Ethical sourcing and premium craftsmanship</p>
         </div>
-        <div className="flex pt-6 gap-5 items-center">
-          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl  " />
-          <p>At vero eos et accusamus et iusto</p>
+        <div className="flex pt-6 text-gray-600 text-base  gap-5 items-center">
+          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl" />
+          <p> Advanced technology and modern equipment</p>
         </div>
-        <div className="flex pt-6 gap-5 items-center">
-          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl  " />
-          <p>Natus error sit voluptatem accusantium</p>
+        <div className="flex mb-5 pt-6 gap-5  text-gray-600 text-base items-center">
+          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl" />
+          <p> Dedicated support from concept to delivery</p>
         </div>
-        <Button className=" mt-12 bg-purple  font-bold px-8 py-2 hover:from-blue-900 hover:to-blue-950">
-          LEARN MORE
-        </Button>
+
+        <Button className="  font-bold px-8 py-2 ">LEARN MORE</Button>
       </div>
     </div>
   );

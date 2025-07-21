@@ -24,24 +24,23 @@ export default function Home() {
           <h2 className="text-3xl text-gray-400 font-bold mb-4">
             We Are From - 2019
           </h2>
-          <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold text-gray-200 mb-6">
+          <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold text-whitemb-6">
             Get Quality Fabric For <br /> Your Business
           </h2>
-          <Link
-            href="/about"
-            className="relative inline-block overflow-hidden bg-green text-white  py-3 px-6 rounded-full  shadow group"
-          >
-            {/* Animated purple background */}
-            <span className="absolute inset-0 bg-purple w-0 group-hover:w-full transition-all duration-500 ease-out left-0 top-0 z-0 origin-left"></span>
-
-            {/* Link text stays on top */}
-
-            <span
-              className={`relative z-10 px-8   group-hover:text-white transition-colors duration-300 capitalize ${className}`}
+          <div className="mt-6">
+            <Link
+              href="/contact"
+              className="relative inline-block overflow-hidden bg-green text-white  py-2 px-4 rounded-full shadow group"
             >
-              {children}
-            </span>
-          </Link>
+              {/* Animated purple background */}
+              <span className="absolute inset-0 bg-purple w-0 group-hover:w-full transition-all duration-500 ease-out left-0 top-0 z-0 origin-left"></span>
+
+              {/* Link text stays on top */}
+              <span className="relative z-10 px-8   transition-colors duration-300 ">
+                LEARN MORE
+              </span>
+            </Link>
+          </div>
         </div>
       </SlidingImage>
       <ServicesSection />

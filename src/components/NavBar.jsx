@@ -90,10 +90,10 @@ export const NavBar = ({ isMobileOpen }) => {
           <div className="absolute right-20  top-1/2 transform -translate-y-1/2 z-30">
             <Link
               href="/contact"
-              className="relative inline-block overflow-hidden bg-green text-white  py-3 px-6 rounded-full text-sm shadow group"
+              className="relative inline-block overflow-hidden bg-purple text-white  py-2 px-4 rounded-full shadow group"
             >
               {/* Animated purple background */}
-              <span className="absolute inset-0 bg-purple w-0 group-hover:w-full transition-all duration-500 ease-out left-0 top-0 z-0 origin-left"></span>
+              <span className="absolute inset-0 bg-green w-0 group-hover:w-full transition-all duration-500 ease-out left-0 top-0 z-0 origin-left"></span>
 
               {/* Link text stays on top */}
               <span className="relative z-10 px-8  text-xl group-hover:text-white transition-colors duration-300 capitalize">
@@ -118,22 +118,28 @@ export const NavBar = ({ isMobileOpen }) => {
             </div>
           ))}
           <div className=" hidden lg:flex gap-4 mt-4">
-            <FontAwesomeIcon
-              icon={faFacebookF}
-              className="text-green-600 text-xl"
-            />
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="text-green-600 text-xl"
-            />
-            <FontAwesomeIcon
-              icon={faTwitter}
-              className="text-green-600 text-xl"
-            />
+            <Link href="https://www.facebook.com">
+              <FontAwesomeIcon
+                icon={faFacebookF}
+                className="text-green hover:text-purple  text-xl"
+              />
+            </Link>
+            <Link href="https://www.instagram.com">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="text-green hover:text-purple  text-xl"
+              />
+            </Link>
+            <Link href="https://www.twitter.com">
+              <FontAwesomeIcon
+                icon={faTwitter}
+                className="text-green hover:text-purple  text-xl"
+              />
+            </Link>
             <Link href="https://www.linkedin.com">
               <FontAwesomeIcon
                 icon={faLinkedinIn}
-                className="text-green-600 text-xl"
+                className="text-green hover:text-purple  text-xl"
               />
             </Link>
           </div>
