@@ -1,9 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import First from "@/images/sewing.jpg";
-import Second from "@/images/designer.jpg";
-import Third from "@/images/sewing.jpg";
+import First from "@/images/image1.jpg";
+import Second from "@/images/image2.jpg";
+import Third from "@/images/image3.jpg";
+import image4 from "@/images/image4.jpg";
+import image5 from "@/images/image5.jpg";
+
 import {
   Search,
   ChevronRight,

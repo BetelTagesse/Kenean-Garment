@@ -12,23 +12,23 @@ const SingleWork = ({ src, alt, name, slug }) => {
 
   return (
     <>
-      <div className="relative group w-4/5 h-[300px] overflow-hidden rounded-none shadow-none hover:scale-100 duration-300">
+      <div className="relative group w-10/11 h-[320px] overflow-hidden hover:opacity-70 rounded-md shadow-xl hover:scale-100 duration-300">
         {/* Image */}
         <Image
           src={src}
           alt={alt}
-          className="object-cover w-full h-full  overflow-hidden hover:scale-105 transition-transform duration-700"
+          className="object-cover w-full h-full  overflow-hidden hover:scale-105   transition-transform duration-700"
         />
 
         {/* Overlay on hover */}
-        <div className="absolute inset-0  bg-opacity-60 flex flex-col justify-center  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0  bg-opacity-60 flex flex-col justify-center  opacity-0 group-hover:opacity-100 transition-opacity  duration-300">
           {/* Icons */}
           <div className="flex gap-4 items-center justify-center">
             <div
-              className="transform -translate-x-10 group-hover:translate-x-0 transition-all duration-500 bg-white hover:bg-green text-black  hover:text-white p-3  shadow cursor-pointer hover:scale-110"
+              className="transform -translate-x-10 group-hover:translate-x-0 transition-all duration-500 bg-white hover:bg-green text-black  hover:text-white  p-3  shadow cursor-pointer hover:scale-110"
               onClick={() => setShowModal(true)}
             >
-              <Search className="w-4 h-4   font-bold" />
+              <Search className="w-4 h-4   font-extrabold" />
             </div>
 
             <Link href={`/projects/${slug}`}>
@@ -39,7 +39,7 @@ const SingleWork = ({ src, alt, name, slug }) => {
           </div>
 
           {/* Description */}
-          <p className="absolute text-black w-full py-3 text-center bg-white *:text-lg font-semibold -bottom-0 ">
+          <p className="absolute text-black w-full py-3 text-center bg-white text-lg font-semibold -bottom-0 transition-all ">
             {name}
           </p>
         </div>

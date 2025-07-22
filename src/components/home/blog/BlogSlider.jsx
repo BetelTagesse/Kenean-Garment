@@ -50,7 +50,7 @@ const BlogSlider = () => {
                 />
               </div>
 
-              <div className="p-5 bg-white mx-auto w-11/12 relative z-10 shadow-xl -translate-y-20">
+              <div className="p-5 bg-white mx-auto w-11/12  relative z-10 shadow-xl -translate-y-20">
                 <div className="absolute top-0 right-0 bg-green text-white text-sm px-4 py-2 font-semibold">
                   📅 {blog.date}
                 </div>
