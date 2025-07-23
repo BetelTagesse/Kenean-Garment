@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import backgroundImage from "@/images/sewing.jpg";
+import backgroundImage from "@/images/image1.jpg";
 
 const PageBanner = () => {
   return (
@@ -24,7 +24,7 @@ const PageBanner = () => {
           >
             Services
           </Link>
-          <span className="text-green text-3xl">•</span>
+          {/* <span className="text-green text-3xl">•</span> */}
         </div>
       </div>
     </div>

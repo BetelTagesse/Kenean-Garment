@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { MessageCircle, MapPin, Phone, Mail, Send } from "lucide-react";
-import sewing from "@/images/sewing.jpg";
+import Chiffon from "@/images/Chiffon-Fabric.jpg";
+import Sewing from "@/images/sewing.jpg";
 
 const MainSection = () => {
   return (
@@ -35,10 +36,10 @@ const MainSection = () => {
             Our Services
           </h3>
           <ul className="space-y-3 text-gray-400">
-            <li>
+            <li className="">
               <Link
                 href="#"
-                className="hover:text-white transition-colors duration-200"
+                className="hover:text-green transition-colors duration-200"
               >
                 Fabric Development
               </Link>
@@ -46,7 +47,7 @@ const MainSection = () => {
             <li>
               <Link
                 href="#"
-                className="hover:text-white transition-colors duration-200"
+                className="hover:text-green transition-colors duration-200"
               >
                 Digital Fabric Printing
               </Link>
@@ -54,7 +55,7 @@ const MainSection = () => {
             <li>
               <Link
                 href="#"
-                className="hover:text-white transition-colors duration-200"
+                className="hover:text-green transition-colors duration-200"
               >
                 Fabric Dyeing
               </Link>
@@ -62,7 +63,7 @@ const MainSection = () => {
             <li>
               <Link
                 href="#"
-                className="hover:text-white transition-colors duration-200"
+                className="hover:text-green transition-colors duration-200"
               >
                 Quality Engineering
               </Link>
@@ -70,7 +71,7 @@ const MainSection = () => {
             <li>
               <Link
                 href="#"
-                className="hover:text-white transition-colors duration-200"
+                className="hover:text-green transition-colors duration-200"
               >
                 Fabric Finishing
               </Link>
@@ -87,7 +88,7 @@ const MainSection = () => {
             {/* Post Item 1 */}
             <div className="flex items-start space-x-3">
               <Image
-                src={sewing}
+                src={Chiffon}
                 alt="Post Thumbnail 1"
                 className="w-12 h-12 rounded-full object-cover"
               />
@@ -101,7 +102,7 @@ const MainSection = () => {
             {/* Post Item 2 */}
             <div className="flex items-start space-x-3">
               <Image
-                src={sewing}
+                src={Chiffon}
                 alt="Post Thumbnail 2"
                 className="w-12 h-12 rounded-full object-cover"
               />

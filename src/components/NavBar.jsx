@@ -50,12 +50,12 @@ export const NavBar = ({ isMobileOpen }) => {
 
               {/* Dropdown for submenu */}
               {item.submenu && (
-                <div className="absolute left-0 pt-8 w-56 h-80 bg-white  items-stretch rounded-md hidden group-hover:block z-50 shadow-2xl">
+                <div className="absolute left-0  w-56 h-72 bg-white   transition  duration-300 border-t-2 border-t-green items-stretch  hidden group-hover:block z-50 shadow-2xl">
                   {item.submenu.map((sub, subIndex) => (
                     <div key={subIndex}>
                       <Link
                         href={sub.href}
-                        className="group flex items-center px-4 py-4 text-gray-700 hover:text-green transition-all duration-200"
+                        className="group flex  items-center px-4 py-4 text-gray-700 hover:text-green transition-all duration-200"
                       >
                         {sub.label}
                       </Link>

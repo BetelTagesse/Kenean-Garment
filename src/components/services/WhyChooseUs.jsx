@@ -10,58 +10,60 @@ const WhyChooseUsSection = () => {
     {
       title: "Low Price Cost",
       description:
-        "There are many variations of passages but the majority have suffered alteration.",
+        "Affordable textile solutions without reducing quality or customer satisfaction.",
     },
     {
       title: "Latest Technology",
       description:
-        "There are many variations of passages but the majority have suffered alteration.",
+        "Advanced textile machinery ensures fast, efficient, and precise production.",
     },
     {
       title: "Pure Quality",
       description:
-        "There are many variations of passages but the majority have suffered alteration.",
+        "Every fabric is tested for strength, color, and long-lasting durability.",
     },
     {
       title: "24/7 Support",
       description:
-        "There are many variations of passages but the majority have suffered alteration.",
+        "Get expert help anytime with fast responses and dedicated assistance.",
     },
   ];
 
   return (
     <>
-      <div className="relative top-12 left-1/2 transform -translate-x-1/2 z-30 w-[85%] max-w-2xl bg-[#5BA600] text-white p-6 flex justify-between items-center shadow-xl">
+      <div className="relative top-12 left-1/2 transform -translate-x-1/2 z-30 w-[60%] max-w-2xl bg-[#5BA600] text-white p-6 flex items-center shadow-xl">
         <div className="text-lg md:text-xl font-bold">
-          The Best Textile Solutions For <br /> Your Business.
+          The Best Textile Solutions For Your <br /> Business.
         </div>
 
-        {/* Animated Play Button */}
-        <Link
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative group"
-        >
-          {/* Outer animation pulse */}
-          <span className="absolute inset-0 rounded-full animate-ping bg-white/30 group-hover:scale-110 transition-transform duration-300"></span>
+        {/* Push button to the right */}
+        <div className="ml-auto">
+          {/* Animated Play Button */}
+          <Link
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group"
+          >
+            {/* Outer animation pulse */}
+            <span className="absolute inset-0 rounded-full animate-ping bg-white/30 group-hover:scale-110 transition-transform duration-300"></span>
 
-          {/* Actual button */}
-          <span className="relative z-10 w-14 h-14 rounded-full bg-white  transition flex items-center justify-center">
-            <Play className="fill-green  w-8 h-8 " />
-          </span>
-        </Link>
-        <div className="w-10 text-amber-300" />
+            {/* Actual button */}
+            <span className="relative z-10 w-14 h-14 rounded-full bg-white flex items-center justify-center">
+              <Play className="fill-green w-8 h-8" />
+            </span>
+          </Link>
+        </div>
       </div>
 
       <section className=" bg-[rgb(255,255,255)] shadow-2xl py-20 px-4 sm:px-6 lg:px-8">
         <div className=" relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
-          <div className="relative w-full h-[450px] lg:h-[550px]  overflow-hidden shadow-2xl">
+          <div className="relative hidden md:block w-full h-[450px] lg:h-[550px]  overflow-hidden shadow-2xl">
             <Image
               src={sewingImage}
               alt="Why Choose Us"
               fill
-              className="object-cover"
+              className="object-cover "
               priority
             />
           </div>

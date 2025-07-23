@@ -10,13 +10,13 @@ import FirstPart from "@/components/about/FirstPart";
 export default function About() {
   return (
     <div>
-      <Image
+      {/* <Image
         src={First}
         alt="Background"
         objectFit=""
         className=" h-56 w-full brightness-50 z-0"
         priority
-      />
+      /> */}
       <WhoWeAre />
       <Services />
       <div className="w-5/6 mx-auto">

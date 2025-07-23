@@ -24,7 +24,7 @@ export default function Home() {
           <h2 className="text-3xl text-gray-400 font-bold mb-4">
             We Are From - 2019
           </h2>
-          <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold text-whitemb-6">
+          <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6">
             Get Quality Fabric For <br /> Your Business
           </h2>
           <div className="mt-6">

@@ -33,19 +33,19 @@ export const WhoWeAre = () => {
         </p>
 
         <div className="flex pt-6 gap-5 items-center text-gray-600 text-base leading-relaxed">
-          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl" />
+          <FontAwesomeIcon icon={faCheck} className="text-green text-xl" />
           <p> Ethical sourcing and premium craftsmanship</p>
         </div>
-        <div className="flex pt-6 text-gray-600 text-base  gap-5 items-center">
-          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl" />
+        <div className="flex pt-4 text-gray-600 text-base  gap-5 items-center">
+          <FontAwesomeIcon icon={faCheck} className="text-green text-xl" />
           <p> Advanced technology and modern equipment</p>
         </div>
-        <div className="flex mb-5 pt-6 gap-5  text-gray-600 text-base items-center">
-          <FontAwesomeIcon icon={faCheck} className="text-green text-2xl" />
+        <div className="flex mb-5 pt-4 gap-5  text-gray-600 text-base items-center">
+          <FontAwesomeIcon icon={faCheck} className="text-green text-xl" />
           <p> Dedicated support from concept to delivery</p>
         </div>
 
-        <Button className="  font-bold px-8 py-2 ">LEARN MORE</Button>
+        <Button className="  font-bold px-8 pt-4 ">LEARN MORE</Button>
       </div>
     </div>
   );

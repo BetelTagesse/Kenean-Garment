@@ -8,16 +8,16 @@ import { Search, Shuffle } from "lucide-react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import First from "@/images/sewing.jpg";
-import Second from "@/images/designer.jpg";
-import Third from "@/images/sewing.jpg";
-import Fourth from "@/images/bbq_burger.png";
+import First from "@/images/worker1.jpg";
+import Second from "@/images/worker2.jpg";
+import Third from "@/images/worker3.jpg";
+import Fourth from "@/images/worker4.jpg";
 
 const teams = [
-  { name: "John Doe", title: "Lead Designer", image: First },
-  { name: "Jane Doe", title: "UX/UI Designer", image: Second },
-  { name: "Johnson Doe", title: "Lead Developer", image: Third },
-  { name: "Janekin Doe", title: "Project Manager", image: Fourth },
+  { name: "Alem Tadesse", title: "Textile Production Manager", image: First },
+  { name: "Liya Mekonnen", title: "Fabric Design Specialist", image: Second },
+  { name: " Hana Belay", title: "Textile Engineer", image: Third },
+  { name: "Samuel Tesfaye", title: "Quality Assurance Lead", image: Fourth },
 ];
 
 const OurTeam = () => {

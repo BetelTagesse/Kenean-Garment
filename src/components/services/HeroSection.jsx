@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import BgImage from "@/images/sewing.jpg";
-
-import { Play } from "lucide-react";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -16,34 +14,34 @@ const HeroSection = () => {
         priority
         className="object-cover"
       />
+
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-[#0a1a3a]/90 z-10"></div>
+
       {/* Main Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 lg:px-8 h-full flex flex-col justify-center">
         <div className="max-w-2xl text-white">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Best Textile Manufacturing Industries In The World.
           </h1>
+
           <p className="mt-4 text-lg text-gray-200 max-w-lg">
-            It is a long established fact that a reader will be distracted by
-            the readable content.
+            We deliver premium fabrics through modern techniques, ensuring
+            quality, durability, and style for all your textile needs.
           </p>
-        </div>
 
-        {/* CTA Button */}
-        <div className="absolute right-8 top-1/2 transform -translate-y-1/2 z-30">
-          <Link
-            href="/contact"
-            className="relative inline-block overflow-hidden bg-green text-white font-bold py-3 px-6 rounded-full text-sm shadow group"
-          >
-            {/* Animated purple background */}
-            <span className="absolute inset-0 bg-purple w-0 group-hover:w-full transition-all duration-500 ease-out left-0 top-0 z-0 origin-left"></span>
-
-            {/* Link text stays on top */}
-            <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-              CONTACT US
-            </span>
-          </Link>
+          {/* CTA Button */}
+          <div className="mt-6">
+            <Link
+              href="/contact"
+              className="relative inline-block overflow-hidden bg-green text-white font-bold py-3 px-6 rounded-full text-sm shadow group"
+            >
+              <span className="absolute inset-0 bg-purple w-0 group-hover:w-full transition-all duration-500 ease-out left-0 top-0 z-0 origin-left"></span>
+              <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+                CONTACT US
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
