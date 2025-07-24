@@ -4,17 +4,17 @@ import ProjectInfo from "./ProjectInfo";
 import ProjectDescription from "./ProjectDescription";
 import RelatedProjects from "./RelatedProjects";
 import ClientSummary from "./ClientSummary";
+import projects from "@/data/projectsData";
 
 const ProjectDetails = ({ project }) => {
-  console.log("project info:", {
-    client: project.client,
-    price: project.price,
-    date: project.date,
-    status: project.status,
-  });
+  const currentSlug = project.slug;
+
+  const relatedProjects = projects
+    .filter((p) => p.slug !== currentSlug)
+    .slice(0, 3);
 
   return (
-    <div className="space-y-20">
+    <div className="space-y-15">
       <PageBanner title={project.name} backgroundImage={project.image} />
 
       <ProjectInfo
@@ -33,13 +33,16 @@ const ProjectDetails = ({ project }) => {
         description={project.description}
       />
       <ClientSummary />
-      <RelatedProjects
-        src={project.image}
-        alt={project.name}
-        name={project.name}
-        slug={project.slug}
-        description={project.description.slice(0, 95) + "..."}
-      />
+      {relatedProjects.map((project, index) => (
+        <RelatedProjects
+          key={index}
+          name={project.name}
+          src={project.image}
+          alt={project.alt}
+          slug={project.slug}
+          description={project.description.slice(0, 95) + "..."}
+        />
+      ))}
     </div>
   );
 };

@@ -1,34 +1,29 @@
-import Image from "next/image";
-import fabricIcon1 from "@/images/icon-digital-print.png";
-import fabricIcon2 from "@/images/icon-dye.png";
-
-import fabricIcon3 from "@/images/icon-dye.png";
-import fabricIcon4 from "@/images/icon-digital-print.png";
+import { FlaskConical, Printer, Droplets, Sparkles } from "lucide-react";
 
 const steps = [
   {
     title: "Fabric Development",
     description:
-      "There are many variations of majority have to suffered alteration in some form.",
-    icon: fabricIcon1,
+      "We research and design textiles to meet performance and aesthetic requirements.",
+    icon: FlaskConical,
   },
   {
     title: "Digital Printing",
     description:
-      "There are many variations of majority have to suffered alteration in some form.",
-    icon: fabricIcon2,
+      "Our precision printing ensures vivid colors and clear patterns on all fabrics.",
+    icon: Printer,
   },
   {
     title: "Fabric Dyeing",
     description:
-      "There are many variations of majority have to suffered alteration in some form.",
-    icon: fabricIcon3,
+      "Using modern dyeing methods, we achieve rich tones with eco-safe processes.",
+    icon: Droplets,
   },
   {
     title: "Fabric Finishing",
     description:
-      "There are many variations of majority have to suffered alteration in some form.",
-    icon: fabricIcon4,
+      "Final touches enhance durability, softness, and fabric performance quality.",
+    icon: Sparkles,
   },
 ];
 
@@ -39,10 +34,9 @@ const ClientSummary = () => {
         Client&apos;s Summary
       </h2>
       <p className="text-gray-600 max-w-3xl mx-auto mb-16">
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters.
+        We follow a complete textile workflow, starting from innovative
+        development through to vibrant printing, quality dyeing, and refined
+        finishing — delivering excellence at every stage.
       </p>
 
       {/* Timeline steps */}
@@ -52,17 +46,15 @@ const ClientSummary = () => {
             key={index}
             className="relative flex flex-col items-center text-center flex-1 z-10"
           >
-            {/* Green connector line between icons (inline and centered) */}
             {index < steps.length - 1 && (
-              <div className="hidden md:block absolute top-1/6 left-[70%] w-[80%] h-1 bg-green  z-0" />
+              <div className="hidden md:block absolute top-1/6 left-[70%] w-[80%] h-1 bg-green z-0" />
             )}
 
-            {/* Circular icon */}
+            {/* Circular Icon */}
             <div className="w-16 h-16 bg-green rounded-full flex items-center justify-center mb-4 z-10 transition duration-300 hover:-translate-y-2 hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.3)]">
-              <Image src={step.icon} alt={step.title} width={30} height={30} />
+              <step.icon className="text-white w-7 h-7" />
             </div>
 
-            {/* Text */}
             <h4 className="font-bold text-lg text-[#0A1A3A]">{step.title}</h4>
             <p className="text-sm text-gray-600 max-w-[200px]">
               {step.description}

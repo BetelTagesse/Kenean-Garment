@@ -25,15 +25,15 @@ const SingleProject = ({ src, alt, name, slug }) => {
           {/* Icons */}
           <div className="flex items-center justify-center gap-4">
             <div
-              className="transform -translate-x-10 group-hover:translate-x-0 transition-all duration-500 bg-white hover:bg-green p-3 rounded shadow cursor-pointer hover:scale-110"
+              className="transform -translate-x-10 group-hover:translate-x-0 transition-all duration-500 bg-white hover:bg-green  hover:text-white  p-3 rounded shadow cursor-pointer hover:scale-110"
               onClick={() => setShowModal(true)}
             >
-              <Search className="w-5 h-5 text-black font-bold" />
+              <Search className="w-5 h-5 font-bold" />
             </div>
 
             <Link href={`/projects/${slug}`}>
-              <div className="transform translate-x-10 group-hover:translate-x-0 transition-all duration-500 bg-white hover:bg-green p-3 rounded shadow cursor-pointer hover:scale-110">
-                <Shuffle className="w-5 h-5 text-black font-extrabold" />
+              <div className="transform translate-x-10 group-hover:translate-x-0 transition-all duration-500 bg-white hover:bg-green  hover:text-white  p-3 rounded shadow cursor-pointer hover:scale-110">
+                <Shuffle className="w-5 h-5 font-extrabold" />
               </div>
             </Link>
           </div>
