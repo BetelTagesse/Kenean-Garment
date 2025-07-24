@@ -14,8 +14,8 @@ import HeaderWrapper from "@/components/HeaderWrapper";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata = {
-  title: "Canaan Garment",
-  description: "A garment company website by create next app",
+  title: "Kenean Garment",
+  description: "A local garment company website ",
   icons: {
     icon: "/favicon.ico",
   },
