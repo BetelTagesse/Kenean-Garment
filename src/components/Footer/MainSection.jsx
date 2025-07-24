@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { MessageCircle, MapPin, Phone, Mail, Send } from "lucide-react";
 import Chiffon from "@/images/Chiffon-Fabric.jpg";
-import Sewing from "@/images/sewing.jpg";
+import Cotton from "@/images/Cotton-Fabric.jpg";
 
 const MainSection = () => {
   return (
@@ -94,15 +94,15 @@ const MainSection = () => {
               />
               <div>
                 <p className="text-gray-300">
-                  There are many variations available
+                  Chiffon is a lightweight, soft, and silky fabric.
                 </p>
-                <span className="text-gray-500 text-sm">Feb 25, 2023</span>
+                <span className="text-gray-500 text-sm">May 25, 2025</span>
               </div>
             </div>
             {/* Post Item 2 */}
             <div className="flex items-start space-x-3">
               <Image
-                src={Chiffon}
+                src={Cotton}
                 alt="Post Thumbnail 2"
                 className="w-12 h-12 rounded-full object-cover"
               />
@@ -110,7 +110,7 @@ const MainSection = () => {
                 <p className="text-gray-300">
                   There are many variations available
                 </p>
-                <span className="text-gray-500 text-sm">Feb 25, 2023</span>
+                <span className="text-gray-500 text-sm">Jul 25, 2025</span>
               </div>
             </div>
           </div>
@@ -123,20 +123,20 @@ const MainSection = () => {
             <div className="flex items-start space-x-3">
               <MapPin size={20} className="text-green mt-1 flex-shrink-0" />
               <p className="text-gray-400">
-                2872 Hillhaven Drive,
+                2872 Ashewa meda
                 <br />
-                New York,USA
+                Addis Ababa, Ethiopia,
               </p>
             </div>
             <div className="flex items-center space-x-3">
               <Phone size={20} className="text-green flex-shrink-0" />
-              <p className="text-gray-400">(+1) 123 654 7894</p>
+              <p className="text-gray-400">(+251) 913088240</p>
             </div>
 
-            <Link href="info@domain.com">
+            <Link href="muler2011@gmail.com">
               <div className="flex  items-center  space-x-3">
                 <Mail size={20} className="text-green flex-shrink-0" />
-                <p className="text-gray-400">info@domain.com</p>
+                <p className="text-gray-400">muler2011@gmail.com</p>
               </div>
             </Link>
           </div>

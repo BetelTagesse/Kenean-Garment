@@ -51,7 +51,7 @@ const InfoSection = () => {
             </div>
             <div>
               <p className="font-semibold">Call Us / Email</p>
-              <p className="text-sm text-gray-600">(+1) 123 654 7894</p>
+              <p className="text-sm text-gray-600">(+251) 913088240</p>
               <p className="text-sm text-gray-600">BetelTagesse367@gmail.com</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ const InfoSection = () => {
             </div>
             <div>
               <p className="font-semibold">Call Us / Email</p>
-              <p className="text-sm text-gray-600">+251913088240</p>
+              <p className="text-sm text-gray-600">(+251)913088240</p>
               <p className="text-sm text-gray-600">muler2011@gmail.com</p>
             </div>
           </div>

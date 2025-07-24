@@ -19,42 +19,94 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
-import { blogData } from "./blogPostData";
 
-// Blog post data
-const blogPostData = {
-  id: "1",
-  title: "There are many variations of passages of Lorem Ipsum available",
-  mainImage: First,
-  date: "25 MAY",
-  category: "Textile Industry",
-  author: "Francis Lazoe",
-  commentsCount: 10,
-  tags: ["Fabric", "Cotton", "Industry"],
-  content: `
-    <p>There are many variations of passages of Lorem Ipsum available, but the majority...</p>
-    <blockquote class="border-l-4 border-green-500 pl-4 italic text-gray-600 bg-green-50 p-4 rounded-lg my-6">
-      “It is a long established fact that a reader will be distracted by the layout.”
-      <p class="font-semibold mt-2">- Peter W Willis</p>
-    </blockquote>
-    <h3 class="text-2xl font-bold text-gray-800 mb-4">Sed ut perspiciatis unde omnis iste natus erro</h3>
-    <p>But I must explain to you how all this mistaken idea of denouncing pleasure...</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-      <img src="/images/sewing.jpg" alt="Content Image 1" class="w-full h-auto rounded-lg shadow-md" />
-      <img src="/images/designer.jpg" alt="Content Image 2" class="w-full h-auto rounded-lg shadow-md" />
-    </div>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-      <li>There are many variations of passages</li>
-      <li>That are many variations of layout</li>
-      <li>Majority are many variations of readable</li>
-      <li>Fact are many variations of content</li>
-      <li>Point are many variations of distracted</li>
-    </ul>
-    <p>At vero eos et accusamus et iusto odio dignissimos...</p>
-  `,
-};
-
-// Sidebar Data
+const blogPostData = [
+  {
+    slug: "fabric-dyeing-process",
+    title: "Exploring the Modern Fabric Dyeing Process",
+    titleOne: "How Fabric Dyeing Works",
+    excerpt:
+      "Discover how colors are infused into textiles using sustainable dyeing methods.",
+    mainImage: image1,
+    date: "25 MAY",
+    category: "Textile Innov.",
+    author: "Francis Lazoe",
+    commentsCount: 10,
+    tags: ["Sustainability", "Color", "Fabric"],
+    content: `
+      <p>Fabric dyeing has evolved far beyond traditional vats of chemical color. Today, manufacturers utilize eco-friendly processes like reactive dyeing and digital color infusion that significantly reduce water and energy consumption.</p>
+      <p>From fiber preparation to final rinse, every step is fine-tuned for efficiency and sustainability. Color consistency, colorfastness, and fiber integrity are essential markers of a well-executed dyeing process.</p>
+    `,
+  },
+  {
+    slug: "digital-printing-tips",
+    title: "Digital Printing: Boosting Precision in Fabric Design",
+    titleOne: "5 Tips for Digital Printing on Fabric",
+    excerpt:
+      "Enhance your textile printing results with modern digital techniques and best practices.",
+    mainImage: image2,
+    date: "30 MAY",
+    category: "Digital Printing",
+    author: "Jane Doe",
+    commentsCount: 5,
+    tags: ["Technology", "Textile Design"],
+    content: `
+      <p>Digital printing has revolutionized how designs are applied to fabric. It's fast, accurate, and allows for unlimited creativity. However, achieving high-quality prints requires a deep understanding of fabric types, ink compatibility, and pretreatment methods.</p>
+      <p>This guide shares five essential tips—from resolution settings to curing methods—that help ensure sharp, vibrant prints on every roll.</p>
+    `,
+  },
+  {
+    slug: "choosing-fabric-types",
+    title: "How to Choose the Right Fabric for Your Product",
+    titleOne: "Choosing the Right Fabric",
+    excerpt:
+      "Understand fiber characteristics to match fabric to function effectively.",
+    mainImage: image3,
+    date: "30 MAY",
+    category: "Fabric",
+    author: "Jane Doe",
+    commentsCount: 5,
+    tags: ["Materials", "Performance"],
+    content: `
+      <p>Not all fabrics are created equal. Choosing between cotton, polyester, silk, or blends depends on the final application. Breathability, durability, drape, and texture must all be considered.</p>
+      <p>In this article, we explore how designers and manufacturers select fabric with purpose—whether for fashion, upholstery, or industrial use.</p>
+    `,
+  },
+  {
+    slug: "sustainable-textile-practices",
+    title: "Moving Toward Greener Textile Manufacturing",
+    titleOne: "Sustainability in Textile Production",
+    excerpt:
+      "Explore how textile companies are adopting greener practices from fiber to finish.",
+    mainImage: image4,
+    date: "5 JUN",
+    category: "Sustainability",
+    author: "Elena Mahari",
+    commentsCount: 3,
+    tags: ["Eco-Friendly", "Sustainability"],
+    content: `
+      <p>The textile industry is making bold moves toward carbon-neutral production. Techniques like closed-loop water systems, plant-based dyes, and biodegradable packaging are becoming the new standard.</p>
+      <p>This post highlights inspiring examples from companies leading the way in sustainable textile development.</p>
+    `,
+  },
+  {
+    slug: "future-of-textile-tech",
+    title: "Smart Textiles and the Future of Fabric",
+    titleOne: "Smart Fabrics: What’s Next?",
+    excerpt:
+      "From temperature-regulating materials to health-monitoring garments, textiles are getting smarter.",
+    mainImage: image5,
+    date: "12 JUN",
+    category: "Tech in Textiles",
+    author: "Daniel Kiros",
+    commentsCount: 8,
+    tags: ["Innovation", "Smart Fabric"],
+    content: `
+      <p>Textiles are no longer passive materials. With embedded sensors, conductive threads, and adaptive fibers, the industry is creating garments that interact with their environment and user.</p>
+      <p>Discover how wearable tech and smart fabrics are transforming industries from healthcare to fashion.</p>
+    `,
+  },
+];
 const categoriesData = [
   { name: "Textile Industry", count: 10 },
   { name: "Digital Printing", count: 20 },
@@ -252,7 +304,7 @@ const CommentForm = () => (
 );
 
 export default function BlogPage({ slug }) {
-  const blog = blogData.find((b) => b.slug === slug);
+  const blog = blogPostData.find((b) => b.slug === slug);
   if (!blog) return <div className="text-center py-20">Post not found</div>;
   return (
     <div className="bg-gray-50">

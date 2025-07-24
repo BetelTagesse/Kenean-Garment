@@ -11,12 +11,12 @@ import CommentForm from "@/components/blog/CommentForm";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 import {
-  blogPostData,
+  blogData,
   categoriesData,
   recentPostsData,
   popularTagsData,
   commentsData,
-} from "./blogPageData";
+} from "./blogPostData";
 
 export default function BlogSinglePage() {
   return (
@@ -34,13 +34,13 @@ export default function BlogSinglePage() {
           <BlogHeader {...blogPostData} />
 
           <div className="bg-white p-6 rounded-lg shadow text-gray-700 leading-relaxed">
-            <div dangerouslySetInnerHTML={{ __html: blogPostData.content }} />
+            <div dangerouslySetInnerHTML={{ __html: blogData.content }} />
 
             {/* Tags and Share */}
             <div className="flex flex-col sm:flex-row justify-between items-center mt-8 pt-6 border-t border-gray-200">
               <div className="flex items-center flex-wrap gap-2 text-sm mb-3 sm:mb-0">
                 <span className="font-semibold text-gray-800">Tags:</span>
-                {blogPostData.tags.map((tag, i) => (
+                {blogData.tags.map((tag, i) => (
                   <span key={i} className="text-gray-600 hover:text-green">
                     {tag}
                   </span>

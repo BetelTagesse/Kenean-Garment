@@ -11,7 +11,7 @@ const CommentForm = () => (
         <input
           type="text"
           placeholder="Name"
-          className="border p-2 rounded w-full"
+          className="  p-2 rounded w-full"
         />
         <input
           type="email"
